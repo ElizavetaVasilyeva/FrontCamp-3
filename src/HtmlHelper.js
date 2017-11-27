@@ -20,8 +20,12 @@ class HtmlHelper {
         return (element && className) ? element.className += className : null;
     }
 
-    getFirstNElements(source, n){
+    getFirstNElements(source, n) {
         return (source && n) ? source.slice(0, n) : null;
+    }
+
+    clearValue(element) {
+        return (element) ? element.value = "" : null;
     }
 
 }
