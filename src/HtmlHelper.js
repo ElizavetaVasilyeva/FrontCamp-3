@@ -1,13 +1,5 @@
 class HtmlHelper {
 
-    createElement(element) {
-        return (element) ? document.createElement(element) : null;
-    }
-
-    appendElement(parent, el) {
-        return (parent && el) ? parent.appendChild(el) : null;
-    }
-
     cutString(string, n) {
         return (string && n) ? string.split(' ').slice(0, n).join(' ') + '...' : '';
     }
@@ -16,10 +8,14 @@ class HtmlHelper {
         return (container) ? container.innerHTML = '' : null;
     }
 
-    addClass(element, className) {
-        return (element && className) ? element.className += className : null;
-    }
-
+    /**
+     * Return first n-count elements from certain sequence
+     *
+     * @params {source} some sequence 
+     * @params {n} amount of elements
+     * 
+     * @return first n-count elements from certain sequence
+    **/
     getFirstNElements(source, n) {
         return (source && n) ? source.slice(0, n) : null;
     }

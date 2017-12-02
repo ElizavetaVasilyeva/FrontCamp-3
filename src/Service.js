@@ -1,12 +1,12 @@
 class Service {
 
-    GetAllItems(url) {
+    async GetAllItems(url) {
 
-        var req = new Request(url);
-
-        return fetch(req)
-            .then((response) => response.json());
+            let response = await fetch(url);
+            var data = await response.json();
+            return data;
     }
+    
 }
 
 const SERVICE = (() => ({ Service }))();

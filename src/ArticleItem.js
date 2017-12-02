@@ -4,25 +4,25 @@ class ArticleItem {
     }
 
     getTemplate() {
-        let date = (new Date(this.article.publishedAt)).toLocaleDateString();
-        let { title, author, url, description } = this.article;
+        const date = (new Date(this.article.publishedAt)).toLocaleDateString();
+        const { title, author, url, description } = this.article;
 
-        let div = htmlHelper.createElement('div'),
-            span = htmlHelper.createElement('span'),
-            span2 = htmlHelper.createElement('span'),
-            p = htmlHelper.createElement('p'),
-            link = htmlHelper.createElement('a');
+        const div = document.createElement('div'),
+            span = document.createElement('span'),
+            span2 = document.createElement('span'),
+            p = document.createElement('p'),
+            link = document.createElement('a');
 
-        htmlHelper.addClass(div, 'card');
+        div.classList.add('card');
         span.innerHTML = title;
         link.href = url;
         p.innerHTML = `${author} - ${date}`;
         span2.innerHTML = htmlHelper.cutString(description, 30);
-        htmlHelper.addClass(span2, 'description');
-        htmlHelper.appendElement(link, span);
-        htmlHelper.appendElement(div, link);
-        htmlHelper.appendElement(div, p);
-        htmlHelper.appendElement(div, span2);
+        span2.classList.add('description');
+        link.appendChild(span);
+        div.appendChild(link);
+        div.appendChild(p);
+        div.appendChild(span2);
 
         return div;
     }
