@@ -4,19 +4,19 @@ class SourceItem {
     }
 
     getTemplate() {
-        let { id, name, url } = this.source;
-        let div = htmlHelper.createElement('div'),
-            span = htmlHelper.createElement('span');
-        url = htmlHelper.createElement('a');
+        const { id, name, url } = this.source;
 
-        htmlHelper.addClass(div, 'card');
+        const div = document.createElement('div'),
+              span = document.createElement('span'),
+              url2 = document.createElement('a');
+
+        div.classList.add('card');
         span.innerHTML = name;
-        span.addEventListener('click', function () {
-            LoadArticles(id);
-        });
-        url.href = url;
-        htmlHelper.appendElement(div, span);
-        htmlHelper.appendElement(div, url);
+        span.addEventListener('click', () => { LoadArticles(id); })
+        url2.href = url;
+        div.appendChild(span);
+        div.appendChild(url2);
+
         return div;
     }
 }
