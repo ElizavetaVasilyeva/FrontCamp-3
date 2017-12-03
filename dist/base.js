@@ -44,6 +44,7 @@ function LoadMainPage(sources) {
 		});
 	}).catch(function (error) {
 		ELEMENTS.modalBody.innerHTML = COMMON_ERROR;
+		//test plugin
 		$('#dialog').modal('show');
 	});
 }

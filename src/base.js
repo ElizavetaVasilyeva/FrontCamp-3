@@ -40,6 +40,7 @@ function LoadMainPage(sources) {
 		});
 	}).catch((error) => {
 		ELEMENTS.modalBody.innerHTML = COMMON_ERROR;
+		console.log(error.get_message()); //test plugin
 		$('#dialog').modal('show');
 	});
 }
