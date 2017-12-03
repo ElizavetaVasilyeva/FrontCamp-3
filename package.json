@@ -4,7 +4,7 @@
   "description": "Front Camp homeworks 1. HW1/ES2015 run https://elizavetavasilyeva.github.io/FrontCamp-3/",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel src plugin -d dist",
     "watch": "babel src -d dist -w"
   },
   "keywords": [],
