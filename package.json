@@ -1,0 +1,23 @@
+{
+  "name": "myProject",
+  "version": "1.0.0",
+  "description": "Front Camp homeworks 1. HW1/ES2015 run https://elizavetavasilyeva.github.io/FrontCamp-3/",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel src -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "4.12.1",
+    "promise-polyfill": "6.1.0",
+    "whatwg-fetch": "2.0.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0"
+  }
+}

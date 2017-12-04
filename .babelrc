@@ -1,0 +1,15 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "ie": 10
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "./plugin/plugin_remove_all_consoleLogs.js"
+    ]
+}

@@ -1,3 +1,4 @@
+'use strict';
 
 const service = new SERVICE.Service();
 const htmlHelper = new HTML_HELPER.HtmlHelper();
@@ -14,82 +15,81 @@ window.onload = () => {
 	BindAutocomplete(sources);
 	LoadMainPage(sources);
 	addEventListeners();
-}
+};
 
 const addEventListeners = () => {
+	document
+		.getElementById('searchBtn')
+		.addEventListener('click', () => { LoadArticles(ELEMENTS.searchId.value); });
 
-	document.getElementById('searchBtn').addEventListener('click', function () {
-		LoadArticles(ELEMENTS.searchId.value);
-	});
+	document
+		.getElementById('mainPage')
+		.addEventListener('click', () => { LoadMainPage(sources); });
+};
 
-
-	document.getElementById('mainPage').addEventListener('click', function () {
-		LoadMainPage(sources);
-	});
-}
-
-const sources = service.GetAllItems(`${Constants.SERVICE_URL_SOURCES}?apiKey=${Constants.API_KEY}`)
-	.then(data => data.sources);
-
+const query = `${Constants.SERVICE_URL_SOURCES}?apiKey=${Constants.API_KEY}`;
+const sources = service
+	.GetAllItems(query)
+	.then(data => { return data.sources; });
 
 function LoadMainPage(sources) {
-
-	sources.then(function (data) {
-		htmlHelper.clearContainer(ELEMENTS.container);
-		let top10sources = htmlHelper.getFirstNElements(data, 10);
-		top10sources.map(source => {
-			let sourceItem = new SourceItem(source);
-			htmlHelper.appendElement(ELEMENTS.container, sourceItem.getTemplate());
-		});
-	})
-		.catch(function (error) {
+	sources
+		.then(data => {
+			htmlHelper.clearContainer(ELEMENTS.container);
+			const top10sources = htmlHelper.getFirstNElements(data, 10);
+			Array.from(top10sources)
+				.forEach(source => {
+					const sourceItem = new SourceItem(source);
+					ELEMENTS.container.appendChild(sourceItem.getTemplate());
+				});
+		})
+		.catch(error => {
 			ELEMENTS.modalBody.innerHTML = COMMON_ERROR;
+			console.log(error.get_message()); //test plugin
 			$('#dialog').modal('show');
 		});
-
 }
 
 function LoadArticles(sourceId) {
-
+	const query = Constants.SERVICE_URL_ARTICLES + '?sources=' + sourceId + '&apiKey=' + Constants.API_KEY;
 	if (sourceId) {
-		service.GetAllItems(`${Constants.SERVICE_URL_ARTICLES}?sources=${sourceId}&apiKey=${Constants.API_KEY}`)
-			.then(function (data) {
+		service
+			.GetAllItems(query)
+			.then(data => {
 				htmlHelper.clearContainer(ELEMENTS.container);
-				let articles = data.articles;
-				articles.map(article => {
-					let articleItem = new ArticleItem(article);
-					htmlHelper.appendElement(ELEMENTS.container, articleItem.getTemplate());
-				});
-			})
-			.catch(function (error) {
+				const { articles } = data;
+				Array.from(articles)
+					.forEach(article => {
+						const articleItem = new ArticleItem(article);
+						ELEMENTS.container.appendChild(articleItem.getTemplate());
+					});
+			}).catch(error => {
 				ELEMENTS.modalBody.innerHTML = COMMON_ERROR;
 				$('#dialog').modal('show');
 			});
-	}
-	else {
+	} else {
 		ELEMENTS.modalBody.innerHTML = NOTEXIST_ERROR;
 		$('#dialog').modal('show');
 	}
 }
 
 function BindAutocomplete(sources) {
-
-	sources.then(function (data) {
+	sources.then(data => {
 		$("#search").autocomplete({
-			source: data.map(s => ({ value: s.id, label: s.name })),
-			select: function (event, ui) {
+			source: data.map(s => {
+				return { value: s.id, label: s.name };
+			}),
+			select: (event, ui) => {
 				$("#search").val(ui.item.label);
 				$("#searchId").val(ui.item.value);
 				return false;
 			},
 			selectFirst: true,
-			change: function (event, ui) {
-							if (ui.item == null){ 
-									$("#searchId").val("");
-							}
-					}
-		})
+			change: (event, ui) => {
+				if (ui.item == null) {
+					$("#searchId").val("");
+				}
+			}
+		});
 	});
-
 }
-
