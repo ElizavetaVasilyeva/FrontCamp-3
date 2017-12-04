@@ -6,7 +6,6 @@ class ArticleItem {
     getTemplate() {
         const date = (new Date(this.article.publishedAt)).toLocaleDateString();
         const { title, author, url, description } = this.article;
-
         const div = document.createElement('div'),
             span = document.createElement('span'),
             span2 = document.createElement('span'),
@@ -15,7 +14,7 @@ class ArticleItem {
 
         div.classList.add('card');
         span.innerHTML = title;
-        link.href = url;
+        link.setAttribute('href', url);
         p.innerHTML = `${author} - ${date}`;
         span2.innerHTML = htmlHelper.cutString(description, 30);
         span2.classList.add('description');

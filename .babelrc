@@ -1,9 +1,15 @@
 {
     "presets": [
-        "es2015",
-        "es2017"
+        [
+            "env",
+            {
+                "targets": {
+                    "ie": 10
+                }
+            }
+        ]
     ],
-    "plugins":[
+    "plugins": [
         "./plugin/plugin_remove_all_consoleLogs.js"
     ]
 }
