@@ -1,25 +1,26 @@
-EPAM Frontcamp 3 (2017)
+<h2 id="epam-frontcamp-3-2017"><strong>EPAM Frontcamp 3 (2017)</strong></h2>
 
-Hometask 2 - Babel
+<p><strong>Hometask 2 - Babel</strong> <br>
+<strong>Mentee - Vladislav Kovaliov</strong></p>
 
-Mentee - Vladislav Kovaliov
+<p>Used ES6 knowledge including async/await <br>
+Used Babel <br>
+Used preset env <br>
+Used installed eslint plugin in Visual Studio Code <br>
+Used virtual machine VirtualBox with IE10  <br>
+Used a Babel polyfill to use Promises.  <br>
+Used a window.fetch JavaScript polyfill.  <br>
+Used Bootstrap for stylization</p>
 
-Used ES6 knowledge including async/await
-Used Babel 
-Used preset env
-Used installed eslint plugin in Visual Studio Code 
-Used virtual machine VirtualBox with IE10
-Used a Babel polyfill to use Promises.
-Used a window.fetch JavaScript polyfill.
-Used Bootstrap for stylization
+<p><strong>Steps to establish:</strong></p>
 
+<ol>
+<li><p>Install devDependencies through running commands:</p>
 
-Steps to establish:
-1. Install devDependencies through running commands:
-      npm install babel-cli babel-core --save-dev
-      npm install whatwg-fetch --save-dev
-      npm install --save babel-polyfill
-      npm install babel-preset-env --save-dev
-      
-2. Run start script
-      npm start
+<pre><code>npm install babel-cli babel-core --save-dev 
+npm install whatwg-fetch --save-dev 
+npm install --save babel-polyfill 
+npm install babel-preset-env --save-dev
+</code></pre></li>
+<li><p>Run start script npm start</p></li>
+</ol>
