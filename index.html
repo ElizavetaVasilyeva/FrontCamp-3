@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" debug="false">
-<div id="FirebugChannel" style="display: none;">FB_toggle</div>
+<html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" type="image/png" href="./images/connection.png" />
-
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="src/images/connection.png" />
+  <link href="dist/style/index.css" rel="stylesheet" />
   <title>News App</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/jquery-ui.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="./css/base.css" rel="stylesheet">
-</head>
+<link href="/dist/style/index.css?eace8880ee19d38c454a" rel="stylesheet"></head>
 
 <body>
 
@@ -56,8 +47,11 @@
       <h3>Top 10</h3>
     </div>
 
+    <div class="textCenter">
+      <button class="btn btn-success" id="showNews" type="button">Show NEWS!</button>
+    </div>
     <div class="album">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row" id="sources">
         </div>
       </div>
@@ -77,10 +71,7 @@
         </div>
       </div>
     </div>
-
   </main>
-
-
 
   <footer class="footer">
     <div class="container-footer">
@@ -92,16 +83,7 @@
 
   <!-- JavaScript
     ================================================== -->
-  <script src="./js/popper.min.js.download"></script>
-  <script src="./js/jquery-3.2.1.min.js"></script>
-  <script src="./js/jquery-ui.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./src/constants.js"></script>
-  <script src="./src/Service.js"></script>
-  <script src="./src/HtmlHelper.js"></script>
-  <script src="./src/SourceItem.js"></script>
-  <script src="./src/ArticleItem.js"></script>
-  <script src="./src/base.js"></script>
-</body>
+  <script src="./dist/app.bundle.js"></script>
+<script type="text/javascript" src="/dist/app.bundle.js?eace8880ee19d38c454a"></script></body>
 
 </html>
