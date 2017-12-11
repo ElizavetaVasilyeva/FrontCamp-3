@@ -1,8 +1,9 @@
-import "babel-polyfill";
-import "whatwg-fetch"
-
-import './style/bootstrap.min.css'
-import './style/base.scss'
+import "whatwg-fetch";
+import 'bootstrap';
+import 'jquery-ui';
+import '../node_modules/jquery-ui-dist/jquery-ui.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/base.scss';
 
 import CONSTANTS from './js/constants';
 import { Service } from './js/Service';
