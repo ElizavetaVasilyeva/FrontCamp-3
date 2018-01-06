@@ -1,20 +1,20 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require("webpack");
-console.log(__dirname);
+
 module.exports = {
     entry: {
-        index: "./src/base"
+        index: "./src/index"
     },
     output: {
-        filename: "app.bundle.js",
-        publicPath: "/dist"
+        path: path.join(__dirname, 'dist'),
+        publicPath: "/",
+        filename: "bundle.js",
     },
     devServer: {
-        contentBase: "./",
+        contentBase: "./src",
     },
-    devtool: "source-map",
+    devtool: "cheap-inline-module-source-map",
     module: {
         rules: [
             {
@@ -31,17 +31,11 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ["css-loader", "sass-loader"]
-                })
+                loaders: [ "style-loader", "css-loader", "sass-loader"]
+                
             },
-            {
-                test: /\.png$/,
-                loader: "file-loader",
-                options: {
-                    name: "[path][name].[ext]?[hash]"
-                }
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+              loader: 'url-loader?limit=100000'
             }
         ]
     },
@@ -59,17 +53,6 @@ module.exports = {
             Popper: ['popper.js', 'default'],
             Util: "exports-loader?Util!bootstrap/js/dist/util",
             Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
-        }),
-        new HtmlWebpackPlugin({
-            title: 'News API',
-            hash: true,
-            template: './index.html'
-        }),
-        new ExtractTextPlugin({
-            filename: (getPath) => {
-                return getPath("style/[name].css")
-            },
-            allChunks: false,
-        }),
+        })
     ]
 };

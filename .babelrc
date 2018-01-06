@@ -1,15 +1,8 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "ie": 10
-        }
-      }
-    ]
-  ],
+  "presets": ["env"],
   "plugins": [
+    "transform-runtime",
+    "transform-object-rest-spread",
     "./src/plugin/plugin_remove_all_consoleLogs.js"
   ]
 }

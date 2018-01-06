@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>News App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="src/images/connection.png" />
+</head>
+
+<body>
+  <nav class="demo imponent">
+    <a href="#" class="brand">
+      <span>News APP</span>
+    </a>
+  </nav>
+
+  <div id="infoContainer">
+    <div class="mainInfo">
+      <h1>News Application</h1>
+      <p class="lead">News App offers a big data source of news across over a hundred top publications and blogs in near real time.</p>
+    </div>
+
+    <div class="textCenter">
+      <button class='success' id="showNews">Show News!</button>
+    </div>
+  </div>
+
+  <div id="container" class="container">
+    <div class="mainForm">
+      <div class="flex five grow">
+        <div class="four-fifth">
+          <input type="text" id="search" placeholder="Search for..">
+          <input type="hidden" id="searchId">
+        </div>
+        <div>
+          <button class="btnGroup" id="searchBtn">Search!</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="reduxInfoTitle" class="reduxInfo"></h3>
+
+    <div class="flex two center album" id="sources">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <p class="text-muted textCenter">Powered by
+        <a href="https://newsapi.org/">newsapi.org</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/bundle.js"></script>
+
+</body>
+
+</html>
