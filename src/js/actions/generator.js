@@ -1,20 +1,12 @@
-import { SingleArticleItem, PluralArticleItem } from '../components/articleItem';
+import SingleArticleItem from "../components/single-article-item"
+import PluralArticleItem from "../components/plural-article-item"
 import HtmlHelper from '../helpers/htmlHelper';
-import SourceItemFactory from '../components/sourceItem';
+import SourceFactory from '../components/sourceItem';
 
 //Strategy
 class Generator {
-  constructor(itemType, container) {
-    switch (itemType) {
-      case "Article":
-        this.generator = new ArticleGenerator(container)
-        break
-      case "Source":
-        this.generator = new SourceGenerator(container)
-        break
-      default:
-        break
-    }
+  constructor(generator) {
+    this.generator = generator;
   }
 
   Run(items) {
@@ -62,9 +54,9 @@ class SourceGenerator extends BaseGenerator {
     const top10sources = HtmlHelper.getFirstNElements(items, 10);
     Array.from(top10sources)
       .forEach(source => {
-        this.container.appendChild(new SourceItemFactory(source).generateSourceItem());
+        this.container.appendChild(new SourceFactory().createSourceItem(source).generate());
       });
   }
 }
 
-export default Generator
+export { Generator, ArticleGenerator, SourceGenerator }

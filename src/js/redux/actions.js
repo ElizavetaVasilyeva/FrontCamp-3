@@ -1,8 +1,6 @@
-import { CONSTANTS } from '../helpers/constants';
+import { CONSTANTS, SET_ACTIONS_HEADER } from '../helpers/constants';
 
-export const actions = {
-  articles: sourceId => ({
-    type: CONSTANTS.ARTICLES,
-    heading: `${sourceId} articles`.toUpperCase()
-  })
-};
+export const setArticlesHeader = (payload) => ({
+  type: SET_ACTIONS_HEADER,
+  payload,
+});

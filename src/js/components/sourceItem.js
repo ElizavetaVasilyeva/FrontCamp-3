@@ -1,9 +1,36 @@
-class SourceItemFactory {
+class Factory {
+  constructor() {
+  }
+
+  createSourceItem(sourceItem) {
+  }
+}
+
+class SourceFactory extends Factory {
+  constructor() {
+    super()
+  }
+
+  createSourceItem(sourceItem) {
+    return new SourceItem(sourceItem)
+  }
+}
+
+class BaseSourceItem {
   constructor(source) {
     this.source = source;
   }
 
-  generateSourceItem() {
+  generate() {
+  }
+}
+
+class SourceItem extends BaseSourceItem {
+  constructor(source) {
+    super(source)
+  }
+
+  generate() {
     const { id, name, url } = this.source;
     this.item = document.createElement('div');
     this.item.classList.add('albumItem', 'label', 'success');
@@ -19,4 +46,4 @@ class SourceItemFactory {
   }
 }
 
-export default SourceItemFactory
+export default SourceFactory

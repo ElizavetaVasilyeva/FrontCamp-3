@@ -1,3 +1,5 @@
+const DEFAULT_IMAGE_URL = './../../images/placeholder.png'
+
 class HtmlHelper {
 
   /**
@@ -89,6 +91,20 @@ class HtmlHelper {
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.display = 'block';
     }
+  }
+
+  /**
+  * Decorating article item
+  *
+  * @params {article} certain element
+ **/
+  static prepareArticleItem(article) {
+    article.title = article.title || 'No title';
+    article.author = article.author || 'No author';
+    article.url = article.url || '/';
+    article.description = article.description || 'No description';
+    article.urlToImage = article.urlToImage || DEFAULT_IMAGE_URL;
+    return article;
   }
 }
 

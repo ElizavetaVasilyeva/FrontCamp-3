@@ -1,15 +1,13 @@
-import { CONSTANTS } from '../helpers/constants';
+import { CONSTANTS, SET_ACTIONS_HEADER } from '../helpers/constants';
 
 export const reducer = (state = {}, action = {}) => {
-  const store = { ...state };
-  switch (action.type) {
-    case CONSTANTS.SOURCES:
-      store.heading = action.heading;
-      return store;
-    case CONSTANTS.ARTICLES:
-      store.heading = action.heading;
-      return store;
+  const { type, payload } = action;
+
+  switch (type) {
+    case SET_ACTIONS_HEADER:
+      const heading = `${payload.heading} articles`.toUpperCase();
+      return Object.assign({}, state, { heading });
     default:
       return state;
   }
-}
+};

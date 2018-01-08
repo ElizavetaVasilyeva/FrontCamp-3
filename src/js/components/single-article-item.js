@@ -1,32 +1,10 @@
-import HtmlHelper from "../helpers/htmlHelper";
-import placeHolder from "./../../images/placeholder.png";
-
-//Decorator
-const preparedData = article => {
-  article.title = article.title || 'No title';
-  article.author = article.author || 'No author';
-  article.url = article.url || '/';
-  article.description = article.description || 'No description';
-  article.urlToImage = article.urlToImage || placeHolder;
-  return article;
-};
-
-//Composite
-class ArticleItem {
-  constructor() {
-  }
-
-  getTemplate() {
-  }
-
-  Add(ArticleItem) {
-  }
-}
+import ArticleItem from "./article-item";
+import HtmlHelper from "../helpers/htmlHelper"
 
 class SingleArticleItem extends ArticleItem {
   constructor(article) {
     super();
-    this.article = preparedData(article);
+    this.article = HtmlHelper.prepareArticleItem(article);
   }
 
   getTemplate() {
@@ -42,7 +20,7 @@ class SingleArticleItem extends ArticleItem {
       link = document.createElement('a');
 
     div.classList.add('card');
-    img.src = urlToImage;
+    img.setAttribute('src', urlToImage);
     link.innerHTML = title;
     p.innerHTML = `${author} - ${date}`;
     link.setAttribute('href', url);
@@ -61,25 +39,4 @@ class SingleArticleItem extends ArticleItem {
   }
 }
 
-class PluralArticleItem extends ArticleItem {
-  constructor() {
-    super();
-    this.children = [];
-  }
-
-  Add(item) {
-    this.children.push(item);
-  }
-
-  getTemplate() {
-    let template = '';
-
-    this.children.forEach(element => {
-      template += element.getTemplate().outerHTML;
-    });
-
-    return template;
-  }
-}
-
-export { SingleArticleItem, PluralArticleItem }
+export default SingleArticleItem
