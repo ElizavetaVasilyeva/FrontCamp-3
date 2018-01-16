@@ -1,3 +1,6 @@
-# FrontCamp-3
-Front Camp homeworks
-1. HW1/ES2015 run https://elizavetavasilyeva.github.io/FrontCamp-3/
+<h2 id="epam-frontcamp-3-2017"><strong>EPAM Frontcamp 3 (2017)</strong></h2>
+
+<p><strong>Hometask 5 - MongoDB</strong>  <br>
+<strong>Mentee - Vladislav Kovaliov</strong></p>
+
+<p>Open CompletedTasks.md file</p>
