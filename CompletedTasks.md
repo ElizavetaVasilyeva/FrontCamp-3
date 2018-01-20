@@ -1,408 +1,226 @@
-﻿# MongoDB. Home Task 1
+﻿## **MongoDB. Home Task 2**
 
-## 3. Querying Restaurants Collection 
+### **Aggregating Airlines Collection** 
 
-### 3.1 How many “Chinese” (cuisine) restaurants are in “Queens” (borough)?
-
-**Query**:  `db.restaurants.find({ cuisine: "Chinese", borough: "Queens" }).count()`
-
-**Result**: *728*
-
-
-### 3.2 What is the _id of the restaurant which has the grade with the highest ever score?
-
-**Query**: `db.restaurants.find({},{_id: 1}).sort({"grades.score": -1}).limit(1)`
-
-**Result**: `{ "_id" : ObjectId("5a5601ac9bc708ae48df953b") }`
-
-###  3.3 Add a grade { grade: "A", score: 7, date: ISODate() } to every restaurant in “Manhattan” (borough).
-
-**Query**: 
-
-     db.restaurants.update({borough:"Manhattan"},{$addToSet: { grades: {grade: "A", score: 7, date:
-     ISODate()} }},{multi:true})
-
-**Result**: `WriteResult({ "nMatched" : 10259, "nUpserted" : 0, "nModified" : 10259 })`
-
-### 3.4 What are the names of the restaurants which have a grade at index 8 with score less then 7? Use projection to include only names without _id.
-
-**Query**:  `db.restaurants.find({"grades.8.score":{$lt:7}},{_id:0, name:1})`
-
-**Result**: 
-
-    { "name" : "Silver Krust West Indian Restaurant" }
-    { "name" : "Pure Food" }
-
-
-###  3.5 What are _id and borough of “Seafood” (cuisine) restaurants which received at least one “B” grade in period from 2014-02-01 to 2014-03-01? Use projection to include only _id and borough.
+#### **1. How many records does each airline class have? Use $project to show result as** `{ class: "Z", total: 999 }`
 
 **Query**:  
 
-    db.restaurants.find({cuisine: "Seafood", grades: { $elemMatch: { date:
-    { $gte:new ISODate("2014-02-01"),$lte:new ISODate("2014-03-01")}, grade: "B"}}}, {borough:1})
-
-**Result**: 
-
-    { "_id" : ObjectId("5a5601ad9bc708ae48dfc947"), "borough" : "Bronx" }
-    { "_id" : ObjectId("5a5601ad9bc708ae48dfcbbf"), "borough" : "Manhattan" }
-
-## 4. Indexing Restaurants Collection
-
-### 4.1 Create an index which will be used by this query and provide proof (from explain() or Compass UI) that the index is indeed used by the winning plan: `db.restaurants.find({ name: "Glorious Food" })`
-
-**Query**: `db.restaurants.createIndex({ name: 1 })`
-
-**Explain plan**: 
-
-    db.restaurants.find({ name: "Glorious Food" }).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "name" : {
-                                    "$eq" : "Glorious Food"
-                            }
-                    },
-                    "winningPlan" : {
-                            "stage" : "FETCH",
-                            "inputStage" : {
-                                    "stage" : "IXSCAN",
-                                    "keyPattern" : {
-                                            "name" : 1
-                                    },
-                                    "indexName" : "name_1",
-                                    "isMultiKey" : false,
-                                    "multiKeyPaths" : {
-                                            "name" : [ ]
-                                    },
-                                    "isUnique" : false,
-                                    "isSparse" : false,
-                                    "isPartial" : false,
-                                    "indexVersion" : 2,
-                                    "direction" : "forward",
-                                    "indexBounds" : {
-                                            "name" : [
-                                                    "[\"Glorious Food\", \"Glorious Food\"]"
-                                            ]
-                                    }
-                            }
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
-
-### 4.2 Drop index from task 4.1
-**Query**: `db.restaurants.dropIndex({"name":1})`
-
-**Result**: 
-
-    db.restaurants.getIndexes()
-    [
-            {
-                    "v" : 2,
-                    "key" : {
-                            "_id" : 1
-                    },
-                    "name" : "_id_",
-                    "ns" : "frontcamp.restaurants"
+    db.airlines.aggregate([
+        {
+            $group: { 
+                _id: "$class",
+                 total: { $sum: 1 }
+             }
+        },
+        { 
+            $project: { 
+                _id: 0, 
+                class: "$_id",
+                total: "$total" 
             }
-    ]
+        }
+    ])
 
-### 4.3 Create an index to make this query covered and provide proof (from explain() or Compass UI) that it is indeed covered: `db.restaurants.find({ restaurant_id: "41098650" }, { _id: 0, borough: 1 })`
 
-**Query**: `db.restaurants.createIndex({ restaurant_id: 1})`
+**Result**: 
 
-**Explain plan**:
+    { "class" : "F", "total" : 140343 }
+    { "class" : "L", "total" : 23123 }
+    { "class" : "P", "total" : 5683 }
+    { "class" : "G", "total" : 17499 }
 
-    db.restaurants.find({ restaurant_id: "41098650" }, { _id: 0, borough: 1 }).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "restaurant_id" : {
-                                    "$eq" : "41098650"
-                            }
-                    },
-                    "winningPlan" : {
-                            "stage" : "PROJECTION",
-                            "transformBy" : {
-                                    "_id" : 0,
-                                    "borough" : 1
-                            },
-                            "inputStage" : {
-                                    "stage" : "FETCH",
-                                    "inputStage" : {
-                                            "stage" : "IXSCAN",
-                                            "keyPattern" : {
-                                                    "restaurant_id" : 1
-                                            },
-                                            "indexName" : "restaurant_id_1",
-                                            "isMultiKey" : false,
-                                            "multiKeyPaths" : {
-                                                    "restaurant_id" : [ ]
-                                            },
-                                            "isUnique" : false,
-                                            "isSparse" : false,
-                                            "isPartial" : false,
-                                            "indexVersion" : 2,
-                                            "direction" : "forward",
-                                            "indexBounds" : {
-                                                    "restaurant_id" : [
-                                                            "[\"41098650\", \"41098650\"]"
-                                                    ]
-                                            }
-                                    }
-                            }
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
+#### **2. What are the top 3 destination cities outside of the United States (destCountry field, not included) with the highest average passengers count? Show result as** `{ "avgPassengers" : 2312.380, "city" : "Minsk, Belarus" }`
 
-### 4.4 Create a partial index on cuisine field which will be used only when filtering on borough equal to “Staten Island”:
+**Query**: 
 
-    db.restaurants.find({ borough: "Staten Island", cuisine: "American" }) – uses index
-    db.restaurants.find({ borough: "Staten Island", name: "Bagel Land" }) – does not use index
-    db.restaurants.find({ borough: "Queens", cuisine: "Pizza" }) – does not use index
-**Query**: `db.restaurants.createIndex({cuisine: 1 },{ partialFilterExpression: { 'borough': { $eq: "Staten Island" } }})`
+    db.airlines.aggregate([
+    	{
+           $match: {
+    		   destCountry: { $ne: "United States" }    
+    		}
+    	},
+    	{
+    		$group: {
+    			_id: "$destCity",
+    			avgPassangers: { $avg: "$passengers" }
+    		}		
+    	},
+    	{
+    		$sort: { avgPassangers: -1 }
+    	},
+    	{ 
+    		$limit: 3
+    	},
+    	{ 
+            $project: {
+    			_id: 0,
+    			avgPassangers: "$avgPassangers",
+                city: "$_id"
+    		}
+    	}
+    ])
 
-**Explain plan**:
 
-    db.restaurants.find({ borough: "Staten Island", cuisine: "American" }).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "$and" : [
-                                    {
-                                            "borough" : {
-                                                    "$eq" : "Staten Island"
-                                            }
-                                    },
-                                    {
-                                            "cuisine" : {
-                                                    "$eq" : "American"
-                                            }
-                                    }
-                            ]
-                    },
-                    "winningPlan" : {
-                            "stage" : "FETCH",
-                            "filter" : {
-                                    "borough" : {
-                                            "$eq" : "Staten Island"
-                                    }
-                            },
-                            "inputStage" : {
-                                    "stage" : "IXSCAN",
-                                    "keyPattern" : {
-                                            "cuisine" : 1
-                                    },
-                                    "indexName" : "cuisine_1",
-                                    "isMultiKey" : false,
-                                    "multiKeyPaths" : {
-                                            "cuisine" : [ ]
-                                    },
-                                    "isUnique" : false,
-                                    "isSparse" : false,
-                                    "isPartial" : true,
-                                    "indexVersion" : 2,
-                                    "direction" : "forward",
-                                    "indexBounds" : {
-                                            "cuisine" : [
-                                                    "[\"American\", \"American\"]"
-                                            ]
-                                    }
-                            }
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
-**Explain plan 2**:
+**Result**: 
 
-    db.restaurants.find({ borough: "Staten Island", name: "Bagel Land" }).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "$and" : [
-                                    {
-                                            "borough" : {
-                                                    "$eq" : "Staten Island"
-                                            }
-                                    },
-                                    {
-                                            "name" : {
-                                                    "$eq" : "Bagel Land"
-                                            }
-                                    }
-                            ]
-                    },
-                    "winningPlan" : {
-                            "stage" : "COLLSCAN",
-                            "filter" : {
-                                    "$and" : [
-                                            {
-                                                    "borough" : {
-                                                            "$eq" : "Staten Island"
-                                                    }
-                                            },
-                                            {
-                                                    "name" : {
-                                                            "$eq" : "Bagel Land"
-                                                    }
-                                            }
-                                    ]
-                            },
-                            "direction" : "forward"
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
-**Explain plan 3**:
+    { "avgPassangers" : 8052.380952380952, "city" : "Abu Dhabi, United Arab Emirates" }
+    { "avgPassangers" : 7176.596638655462, "city" : "Dubai, United Arab Emirates" }
+    { "avgPassangers" : 7103.333333333333, "city" : "Guangzhou, China" }
 
-    db.restaurants.find({ borough: "Queens", cuisine: "Pizza" }).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "$and" : [
-                                    {
-                                            "borough" : {
-                                                    "$eq" : "Queens"
-                                            }
-                                    },
-                                    {
-                                            "cuisine" : {
-                                                    "$eq" : "Pizza"
-                                            }
-                                    }
-                            ]
-                    },
-                    "winningPlan" : {
-                            "stage" : "COLLSCAN",
-                            "filter" : {
-                                    "$and" : [
-                                            {
-                                                    "borough" : {
-                                                            "$eq" : "Queens"
-                                                    }
-                                            },
-                                            {
-                                                    "cuisine" : {
-                                                            "$eq" : "Pizza"
-                                                    }
-                                            }
-                                    ]
-                            },
-                            "direction" : "forward"
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
 
-### 4.5 Create an index to make query from task 3.4 covered and provide proof (from explain() or Compass UI) that it is indeed covered
+#### **3. Which carriers provide flights to Latvia (destCountry)? Show result as one document **`{ "_id" : "Latvia", "carriers" : [ "carrier1", " carrier2", …] }`
 
-**Query**: `db.restaurants.createIndex({"grades.8.score": 1}, {sparse:true})`
+**Query**: 
 
-**Explain plan**:
+    db.airlines.aggregate([
+    	{
+           $match: {
+    		   destCountry: { $eq: "Latvia" }    
+    		}
+    	},
+    	{
+    		$group: {
+    			_id: "$destCountry",
+    			carriers: {  $addToSet: "$carrier" }
+    		}		
+    	}
+    ])
 
-    db.restaurants.find({"grades.8.score":{$lt:7}},{_id:0, name:1}).explain()
-    {
-            "queryPlanner" : {
-                    "plannerVersion" : 1,
-                    "namespace" : "frontcamp.restaurants",
-                    "indexFilterSet" : false,
-                    "parsedQuery" : {
-                            "grades.8.score" : {
-                                    "$lt" : 7
-                            }
-                    },
-                    "winningPlan" : {
-                            "stage" : "PROJECTION",
-                            "transformBy" : {
-                                    "_id" : 0,
-                                    "name" : 1
-                            },
-                            "inputStage" : {
-                                    "stage" : "FETCH",
-                                    "inputStage" : {
-                                            "stage" : "IXSCAN",
-                                            "keyPattern" : {
-                                                    "grades.8.score" : 1
-                                            },
-                                            "indexName" : "grades.8.score_1",
-                                            "isMultiKey" : true,
-                                            "multiKeyPaths" : {
-                                                    "grades.8.score" : [
-                                                            "grades"
-                                                    ]
-                                            },
-                                            "isUnique" : false,
-                                            "isSparse" : true,
-                                            "isPartial" : false,
-                                            "indexVersion" : 2,
-                                            "direction" : "forward",
-                                            "indexBounds" : {
-                                                    "grades.8.score" : [
-                                                            "[-inf.0, 7.0)"
-                                                    ]
-                                            }
-                                    }
-                            }
-                    },
-                    "rejectedPlans" : [ ]
-            },
-            "serverInfo" : {
-                    "host" : "EPBYMINW5077",
-                    "port" : 27017,
-                    "version" : "3.6.1",
-                    "gitVersion" : "025d4f4fe61efd1fb6f0005be20cb45a004093d1"
-            },
-            "ok" : 1
-    }
 
+**Result**: 
+
+    { "_id" : "Latvia", "carriers" : [ "Uzbekistan Airways", "Blue Jet SP Z o o", "JetClub AG" ] }
+
+#### **4. What are the carriers which flue the most number of passengers from the United State to either Greece, Italy or Spain? Find top 10 carriers, but provide the last 7 carriers (do not include the first 3). Show result as** `{ "_id" : "<carrier>", "total" : 999}`
+
+**Query**:  
+
+    db.airlines.aggregate([
+    	{
+           $match: {
+    		   originCountry : { $eq: "United States" } ,
+    		   destCountry: { $in: ["Greece", "Italy", "Spain"] }    
+    		}
+    	},
+    	{
+    		$group: {
+    			_id: "$carrier",
+    			total: {  $sum: "$passengers" }
+    		}		
+    	},
+    	{
+    		$sort: { total: -1 }
+    	},
+    	{ 
+    		$limit: 10
+    	},
+    	{ 
+    		$skip: 3
+    	}
+    ])
+
+
+**Result**: 
+
+    { "_id" : "Compagnia Aerea Italiana", "total" : 280256 }
+    { "_id" : "United Air Lines Inc.", "total" : 229936 }
+    { "_id" : "Emirates", "total" : 100903 }
+    { "_id" : "Air Europa", "total" : 94968 }
+    { "_id" : "Meridiana S.p.A", "total" : 20308 }
+    { "_id" : "Norwegian Air Shuttle ASA", "total" : 13344 }
+    { "_id" : "VistaJet Limited", "total" : 183 }
+
+
+#### **5. Find the city (originCity) with the highest sum of passengers for each state (originState) of the United States (originCountry). Provide the city for the first 5 states ordered by state alphabetically (you should see the city for Alaska, Arizona and etc). Show result as** `{ "totalPassengers" : 999, "location" : { "state" : "abc", "city" : "xyz" } }`
+
+**Query**:  
+
+    db.airlines.aggregate([
+    	{
+           $match: {
+    			originCountry: "United States"		
+    		}
+    	},
+    	{
+    		$group: {
+    			_id: { 
+    				originState: "$originState",
+    				originCity: "$originCity"
+    			},
+    			totalPassengers: { $sum: "$passengers"}
+    		}		
+    	},
+    	{
+    		$sort: { totalPassengers: -1 }
+    	},
+    	{
+    		$group: {
+    			_id: "$_id.originState",
+    			city: { $first: "$_id.originCity" },
+    			totalPassengers: { $first: "$totalPassengers"}
+    		}		
+    	},
+    	{
+    		$sort: { _id: 1}
+    	},
+    	{ $limit: 5	},
+    	{
+    		$project:{
+    			_id:0,
+    			totalPassengers: "$totalPassengers",
+    			location: {
+    				state: "$_id",
+    				city: "$city"
+    				}
+    		}
+    	}
+    ])
+
+
+**Result**: 
+
+    { "totalPassengers" : 760120, "location" : { "state" : "Alabama", "city" : "Birmingham, AL" } }
+    { "totalPassengers" : 1472404, "location" : { "state" : "Alaska", "city" : "Anchorage, AK" } }
+    { "totalPassengers" : 13152753, "location" : { "state" : "Arizona", "city" : "Phoenix, AZ" } }
+    { "totalPassengers" : 571452, "location" : { "state" : "Arkansas", "city" : "Little Rock, AR" } }
+    { "totalPassengers" : 23701556, "location" : { "state" : "California", "city" : "Los Angeles, CA" } }
+
+
+### **Aggregate Enron Collection**
+
+#### **Inspect a few of the documents to get a basic understanding of the structure. Enron was an American corporation that engaged in a widespread accounting fraud and subsequently failed. In this dataset, each document is an email message. Like all Email messages, there is one sender but there can be multiple recipients.**
+#### **For this task you will use the aggregation framework to figure out pairs of people that tend to communicate a lot. To do this, you will need to unwind the To list for each message.**
+#### **This problem is a little tricky because a recipient may appear more than once in the To list for a message. You will need to fix that in a stage of the aggregation before doing your grouping and counting of (sender, recipient) pairs.**
+#### **Which pair of people have the greatest number of messages in the dataset?**
+#### **For you reference the number of messages from phillip.love@enron.co to sladana-anna.kulic@enron.com is 144.**
+
+**Query**: 
+
+    db.enron.aggregate([
+    	{ $unwind : "$headers.To" },
+    	{	
+    		$group: {
+    			_id: "$_id",
+    			from: {$first: "$headers.From"},
+    			to: {$addToSet: "$headers.To"}
+    		}		
+    	},
+    	{ $unwind : "$to" },
+    	{	
+    		$group: {
+    			_id: {
+    				from: "$from",
+    				to: "$to"
+    			},
+    			countMes: {$sum: 1}
+    		}		
+    	},
+    	{
+    		$sort: {countMes: -1}
+    	}
+    ])
+
+**Result**: 
+
+    { "_id" : { "from" : "susan.mara@enron.com", "to" : "jeff.dasovich@enron.com" }, "countMes" : 750 }
