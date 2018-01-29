@@ -15,14 +15,18 @@ logging mechanism winston were used.
 	    npm install 
 	    
 
- 2. Run application:
+ 2. Run application in dev mode:
 
-		npm run start
+		npm run dev
 
- 3. Run in browser http://localhost:8008
- 4. Show log file **debug.log**
+ 3. Run application in prod mode:
+
+		npm run prod
+
+ 4. Run in browser http://localhost:8008
+ 5. Show log file **debug.log**
  
- 5. For creating POST, PUT and DELETE requests you are allowed to use Fiddler or Postman.
+ 6. For creating POST, PUT and DELETE requests you are allowed to use Fiddler or Postman.
 Ex:
 
     **POST** http://localhost:8008/blogs HTTP/1.1
@@ -32,3 +36,8 @@ Ex:
     Content-Type: application/json
     Request body:
     {"author":"Liza", "context": "Test BLOG"}
+
+cUrl:
+
+    curl -k -i --raw -o 0.dat -X POST "http://localhost:8008/blogs" -H "User-Agent: Fiddler" -H "Host: localhost:8008" -H "Content-Type: application/json"
+
