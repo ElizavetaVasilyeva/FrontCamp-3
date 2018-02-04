@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h2 Edit Blog
+  div.flex.two
+    form(method='POST', action='/blogs/edit/'+blog.id)
+        label Title:
+        input(name='title', type='text' value=blog.title)
+        label Author:
+        input(name='author', type='text' value=blog.author)
+        label Body:
+        textarea(name='body')= blog.body
+        input(type='submit', value='Submit')

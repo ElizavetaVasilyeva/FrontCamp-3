@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        title Blogs API
+        link(rel='stylesheet', href='https://unpkg.com/picnic')
+        link(rel='stylesheet', href='/css/styles.css')
+    body
+     nav.demo
+      a.brand(href="/")
+        span BLOGS API
+        input.show(id="bmenub", type="checkbox")
+        label.burger.pseudo.button(for="bmenub") menu
+
+        div.menu
+         if user
+            a.button.icon-puzzle(href="/users/logout") Logout
+         else   
+            a.pseudo.button.icon-picture(href="/users/register") Register
+            a.button.icon-puzzle(href="/users/login") Login
+     div.mainDiv
+      div.visual.flex.one
+        != messages('message', locals)
+        if errors
+            div.error
+             ul
+              each error, i in errors
+                li= error.msg
+        block content
+   
+     footer.footer
+      div.container-footer.textCenter
+       p Copyright &copy; 2018  
+
+    script(src='/jquery.js')
+    script(src='/js/main.js')       
