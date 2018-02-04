@@ -1,13 +1,13 @@
-**EPAM Frontcamp 3 (2017)**
+**EPAM Frontcamp 3 (2017-2018)**
 ---------------------------
-**Hometask 7 - Node.js/Express.js**
+**Hometask 8 - Node.js/Express.js Part2**
+**Mentor - Vladislav Kovaliov**
+**Mentee - Lizaveta Vasilyeva**
 
-**Mentee - Vladislav Kovaliov**
-
-Blog system web-server based on Node.js + express framework was implemented.
+Blog system web-server based on Node.js + express framework + mongoose ORM was implemented.
 Also in additional nodemon for development and
 logging mechanism winston were used.
- 
+User registration, authorization and authentication were implemented in advanced through the passportjs . 
 
 **Steps to establish:**
 
@@ -15,37 +15,24 @@ logging mechanism winston were used.
 
 	    npm install 
 	    
+ 
+ 2. Restore backup data. Move files within folder db_backups to
 
- 2. Run application in dev mode:
+	    C:\Program Files\MongoDB\Server\3.6\bin\dump
+    than run command
+
+		mongorestore
+    
+ 3. Run application in dev mode:
 
 		npm run dev
 
- 3. Run application in prod mode:
+ 4. Run application in prod mode:
 
 		npm run prod
 
- 4. Run in browser http://localhost:8008
- 5. Show log file **debug.log**
- 
- 6. For creating POST, PUT and DELETE requests you are allowed to use Fiddler or Postman.
-Ex:
-	1) get 	all blogs
+ 5. Run in browser http://localhost:8008
+ 6. Show log file **debug.log**
 
-	    curl  http://localhost:8008/blogs
-    
-	2) get certain blog 	
-
-	    curl  http://localhost:8008/blogs/1
-	3) post new blog		
-
-	    curl --data "author=Liza&context=Test blog" http://localhost:8008/blogs
-    4) put blog   
-
-		curl -X PUT -d "author=Liza&context=Test blog" http://localhost:8008/blogs/1
-		
-	5) delete blog
-
-	      curl -X DELETE http://localhost:8008/blogs/1
-	
 		
 
