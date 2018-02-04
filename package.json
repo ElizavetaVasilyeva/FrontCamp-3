@@ -2,28 +2,19 @@
   "name": "homework",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
-    "connect-flash": "^0.1.1",
     "express": "^4.16.2",
-    "express-jquery": "^1.8.3",
-    "express-messages": "^1.0.1",
-    "express-session": "^1.15.6",
-    "express-validator": "^4.3.0",
     "minimist": "^1.2.0",
-    "mongoose": "^5.0.2",
     "nodemon": "^1.14.11",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
     "pug": "^2.0.0-rc.4",
     "winston": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "./node_modules/.bin/nodemon ./app.js --env dev",
-    "prod": "./node_modules/.bin/nodemon ./app.js --env prod"
+    "dev": "./node_modules/.bin/nodemon ./js/server.js --env dev",
+    "prod": "./node_modules/.bin/nodemon ./js/server.js --env prod"
   },
   "author": "",
   "license": "ISC"

@@ -1,9 +1,0 @@
-extends layout
-
-block content
- h2 All blogs
- a.button.green(href='/blogs/add') Add blog
- ul
-  each blog, i in blogs
-    li
-      a(href="/blogs/"+blog._id)= blog.title
