@@ -1,0 +1,11 @@
+extends layout
+
+block content
+       div
+        div.textCenter
+         h1 #{welcoming}
+         span.mainInfo Blogs API is a simple HTTP REST API for CRUD operations on blogs</br>
+         </br>
+         if user
+          button.buttonShow
+             a(href='/blogs') Show Blogs
