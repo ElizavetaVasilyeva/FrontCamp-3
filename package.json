@@ -1,0 +1,21 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "minimist": "^1.2.0",
+    "nodemon": "^1.14.11",
+    "pug": "^2.0.0-rc.4",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon ./js/server.js --env dev",
+    "prod": "./node_modules/.bin/nodemon ./js/server.js --env prod"
+  },
+  "author": "",
+  "license": "ISC"
+}

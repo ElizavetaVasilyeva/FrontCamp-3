@@ -1,0 +1,191 @@
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:26:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 12:26:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/3","timestamp":"Mon Jan 29 2018 12:26:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:27:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:27:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 12:27:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:28:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/4","timestamp":"Mon Jan 29 2018 12:28:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:28:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:28:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:30:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:35:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 12:35:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:36:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:38:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:38:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:38:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:38:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:39:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:39:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:39:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/4","timestamp":"Mon Jan 29 2018 12:39:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/3","timestamp":"Mon Jan 29 2018 12:39:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/2","timestamp":"Mon Jan 29 2018 12:39:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:45:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:45:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:45:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 12:46:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:46:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 12:46:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=5 not found","timestamp":"Mon Jan 29 2018 12:46:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 12:46:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:46:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogddd","timestamp":"Mon Jan 29 2018 12:46:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:47:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:47:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:47:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 12:48:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:48:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/6","timestamp":"Mon Jan 29 2018 12:48:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=6 not found","timestamp":"Mon Jan 29 2018 12:48:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 12:49:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/6","timestamp":"Mon Jan 29 2018 12:49:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=6 not found","timestamp":"Mon Jan 29 2018 12:49:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 12:49:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/6","timestamp":"Mon Jan 29 2018 12:49:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=6 not found","timestamp":"Mon Jan 29 2018 12:49:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 12:49:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:11:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:11:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:11:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:23:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:23:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:26:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:26:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 17:26:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:26:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:30:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:30:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:30:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:33:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:33:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 17:33:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:38:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 17:38:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 17:38:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 17:38:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:41:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:41:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:43:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:43:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:45:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 17:45:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 17:45:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:46:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:47:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Jan 29 2018 17:47:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=5 not found","timestamp":"Mon Jan 29 2018 17:47:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:48:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:51:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:53:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:54:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:58:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 17:59:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 18:04:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 18:05:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 18:05:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 18:05:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 18:05:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:33:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 19:34:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 19:34:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 19:34:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:39:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 19:40:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 19:40:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 19:40:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:43:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 19:43:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 19:43:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 19:43:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:50:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 19:51:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 19:51:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/vvv","timestamp":"Mon Jan 29 2018 19:51:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:51:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/vvv","timestamp":"Mon Jan 29 2018 19:51:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=NaN not found","timestamp":"Mon Jan 29 2018 19:51:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/gh","timestamp":"Mon Jan 29 2018 19:52:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:53:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:54:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:54:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:55:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:55:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:56:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 19:57:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:01:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:04:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:05:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:06:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 20:08:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:09:02 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:09:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/ddd","timestamp":"Mon Jan 29 2018 20:09:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"Blog with id=NaN not found","timestamp":"Mon Jan 29 2018 20:09:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 20:09:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/vvvvv","timestamp":"Mon Jan 29 2018 20:09:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:09:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:09:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:10:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:13:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:13:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:13:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:14:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:14:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:14:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:15:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:15:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:16:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:16:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:16:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:17:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:17:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:21:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:21:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:21:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:21:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Jan 29 2018 20:21:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:22:02 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:22:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogsff","timestamp":"Mon Jan 29 2018 20:22:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:22:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:22:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:22:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:22:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:23:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:23:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/4","timestamp":"Mon Jan 29 2018 20:23:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:24:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:24:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:24:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:24:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 20:24:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:24:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/4","timestamp":"Mon Jan 29 2018 20:24:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:25:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogsggg","timestamp":"Mon Jan 29 2018 20:25:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:27:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:28:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/2","timestamp":"Mon Jan 29 2018 20:28:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:28:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:28:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:29:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:31:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:31:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:31:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/4","timestamp":"Mon Jan 29 2018 20:31:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:31:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:31:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:35:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:39:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:39:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:39:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:39:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Jan 29 2018 20:39:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 20:56:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 21:00:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 21:04:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"PUT http://localhost:8008/blogs/1","timestamp":"Mon Jan 29 2018 21:08:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 21:09:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs","timestamp":"Mon Jan 29 2018 21:10:22 GMT+0300 (Belarus Standard Time)"}
