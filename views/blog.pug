@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2= blog.title
+  h3 Written by #{author} at #{blog.date.toLocaleDateString('en-US')}
+  p #{blog.body}
+  if user
+    if user.name == blog.author  
+      a.button.green(href='/blogs/edit/'+blog._id) Edit
+      a.button.delete-blog.red(href='#', data-id=blog._id) Delete

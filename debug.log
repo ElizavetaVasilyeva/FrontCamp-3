@@ -1,0 +1,468 @@
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:00:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:00:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:00:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:00:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:06:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:06:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:06:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:07:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:07:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8007/","timestamp":"Mon Feb 05 2018 14:07:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8007/favicon.ico","timestamp":"Mon Feb 05 2018 14:07:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:07:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:07:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:11:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:11:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:11:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:11:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:11:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:11:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:11:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:11:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:11:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/logout","timestamp":"Mon Feb 05 2018 14:11:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:11:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:12:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"User with username=LizaVt not found","timestamp":"Mon Feb 05 2018 14:12:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:12:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:12:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:12:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:12:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:27:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:27:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:27:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"User with username=LizaVg not found","timestamp":"Mon Feb 05 2018 14:28:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:28:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a71871f057c15407ab5bff9","timestamp":"Mon Feb 05 2018 14:28:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"User put wrong password","timestamp":"Mon Feb 05 2018 14:28:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:28:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:28:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 14:28:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 14:28:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 14:28:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 14:28:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:28:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:28:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 14:28:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 14:28:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:28:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a783fea664b5435f8bb1692","timestamp":"Mon Feb 05 2018 14:28:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/5a783fea664b5435f8bb1692","timestamp":"Mon Feb 05 2018 14:28:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:28:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/logout","timestamp":"Mon Feb 05 2018 14:28:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:28:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:30:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:30:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:35:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:35:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:37:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:37:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:37:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:37:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:37:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5","timestamp":"Mon Feb 05 2018 14:37:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:37:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:38:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:38:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:38:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:38:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 14:38:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 14:38:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 14:38:40 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during getting blogs operation\n","stack":"Error: Error occured during getting blogs operation\n\n    at router.get (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:18:13)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at checkAuthenticated (d:\\FrontCamp\\NODE.Express\\Homework\\js\\auth.js:3:14)\n    at router.use (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:14:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:284:7\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:410:3)","status":500,"level":"error","timestamp":"Mon Feb 05 2018 14:38:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:39:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:39:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:42:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:42:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:43:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:43:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:43:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:43:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:45:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:45:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:45:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:45:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:46:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:46:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:47:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:47:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:56:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:56:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 14:59:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 14:59:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:05:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:05:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:05:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:05:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:06:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:06:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:07:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:07:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:08:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:08:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:08:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:08:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:12:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:12:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:14:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:14:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:15:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:15:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:15:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:15:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:16:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:16:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:16:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:16:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"User with username=LizaVy not found","timestamp":"Mon Feb 05 2018 15:16:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:16:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:16:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"warn","message":"User put wrong password","timestamp":"Mon Feb 05 2018 15:16:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:16:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:17:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:17:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/logout","timestamp":"Mon Feb 05 2018 15:17:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:17:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:17:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:17:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:17:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:17:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:17:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:17:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:17:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 15:17:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 15:17:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 15:17:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7710a15899d039ec72fef3","timestamp":"Mon Feb 05 2018 15:17:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:17:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:17:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a71871f057c15407ab5bff9","timestamp":"Mon Feb 05 2018 15:17:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:17:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:17:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 15:17:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 15:18:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:18:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a784b7b77a4d539780b9626","timestamp":"Mon Feb 05 2018 15:18:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a784b7b77a4d539780b9626","timestamp":"Mon Feb 05 2018 15:18:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a784b7b77a4d539780b9626","timestamp":"Mon Feb 05 2018 15:18:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a784b7b77a4d539780b9626","timestamp":"Mon Feb 05 2018 15:18:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/5a784b7b77a4d539780b9626","timestamp":"Mon Feb 05 2018 15:18:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:18:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/logout","timestamp":"Mon Feb 05 2018 15:18:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:18:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:18:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:18:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:18:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 15:18:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 15:18:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:20:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:20:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:20:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:20:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:21:02 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 15:21:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 15:22:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:22:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:22:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 15:43:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:43:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:43:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 15:43:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 15:43:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 15:43:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a718a9e057c15407ab5bffc","timestamp":"Mon Feb 05 2018 15:43:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a718a9e057c15407ab5bffc","timestamp":"Mon Feb 05 2018 15:44:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a718a9e057c15407ab5bffc","timestamp":"Mon Feb 05 2018 15:45:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a718a9e057c15407ab5bffc","timestamp":"Mon Feb 05 2018 15:45:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:06:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:06:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a718a9e057c15407ab5bffc","timestamp":"Mon Feb 05 2018 16:06:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:06:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:06:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:06:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 16:06:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7854c62e9a811c7fc8b08d","timestamp":"Mon Feb 05 2018 16:06:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:08:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:08:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:08:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:08:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:08:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:08:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 16:08:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 16:08:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 16:09:00 GMT+0300 (Belarus Standard Time)"}
+{"message":"Date.now(...).toISOString is not a function","stack":"TypeError: Date.now(...).toISOString is not a function\n    at router.post (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:44:33)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at checkAuthenticated (d:\\FrontCamp\\NODE.Express\\Homework\\js\\auth.js:5:14)\n    at router.use (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:15:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:284:7\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:410:3)","level":"error","timestamp":"Mon Feb 05 2018 16:09:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:10:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:10:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 16:10:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:10:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:10:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:10:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 16:10:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 16:10:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 16:10:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 16:10:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:10:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:11:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:11:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:11:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:11:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:11:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:11:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 16:11:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:11:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:11:58 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:12:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:12:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:13:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 16:14:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:21:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:21:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:21:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:21:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:21:43 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `fff` is not a valid enum value for path `name`.","errors":{"name":{"message":"`fff` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"fff"},"kind":"enum","path":"name","value":"fff","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `fff` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:21:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:24:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:24:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:24:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:24:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:29:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:29:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:30:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:30:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:30:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:30:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:32:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:32:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:32:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:32:37 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.","errors":{"name":{"message":"`vvvv` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"vvvv"},"kind":"enum","path":"name","value":"vvvv","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:32:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:36:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:36:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:36:10 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.","errors":{"name":{"message":"`vvvv` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"vvvv"},"kind":"enum","path":"name","value":"vvvv","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:36:10 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:36:14 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.","errors":{"name":{"message":"`vvvv` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"vvvv"},"kind":"enum","path":"name","value":"vvvv","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:36:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:36:15 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:36:16 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:36:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:37:17 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.","errors":{"name":{"message":"`vvvv` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"vvvv"},"kind":"enum","path":"name","value":"vvvv","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:37:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:38:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:38:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:38:41 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.","errors":{"name":{"message":"`vvvv` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"vvvv"},"kind":"enum","path":"name","value":"vvvv","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `vvvv` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:38:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:38:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:38:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:39:02 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `tttt` is not a valid enum value for path `name`.","errors":{"name":{"message":"`tttt` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"tttt"},"kind":"enum","path":"name","value":"tttt","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `tttt` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:39:02 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:50:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:50:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:51:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:51:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:51:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 16:51:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:51:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:51:56 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: name: `ggg` is not a valid enum value for path `name`.","errors":{"name":{"message":"`ggg` is not a valid enum value for path `name`.","name":"ValidatorError","properties":{"message":"`{VALUE}` is not a valid enum value for path `{PATH}`.","type":"enum","enumValues":["Liza","Kate"],"path":"name","value":"ggg"},"kind":"enum","path":"name","value":"ggg","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: name: `ggg` is not a valid enum value for path `name`.\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 16:51:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:54:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:54:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:56:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:56:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:56:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:56:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:56:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:56:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 16:57:35 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 16:57:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 16:57:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:57:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 16:57:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:00:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:00:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:01:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:01:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:01:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:01:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:01:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:01:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:01:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 17:01:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 17:01:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:10:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:10:21 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:10:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:10:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:10:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:10:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:10:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:10:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:10:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:10:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:10:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:13:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:13:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:13:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:13:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:14:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:14:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:14:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:15:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:15:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:15:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:16:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:16:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:16:06 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `ccc./`","errors":{"email":{"message":"Validator failed for path `email` with value `cccc`","name":"ValidatorError","properties":{"type":"user defined","path":"email","value":"cccc"},"kind":"user defined","path":"email","value":"cccc","$isValidatorError":true},"username":{"message":"Validator failed for path `username` with value `ccc./`","name":"ValidatorError","properties":{"type":"user defined","path":"username","value":"ccc./"},"kind":"user defined","path":"username","value":"ccc./","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `ccc./`\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 17:16:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:16:39 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `ccc./`","errors":{"email":{"message":"Validator failed for path `email` with value `cccc`","name":"ValidatorError","properties":{"type":"user defined","path":"email","value":"cccc"},"kind":"user defined","path":"email","value":"cccc","$isValidatorError":true},"username":{"message":"Validator failed for path `username` with value `ccc./`","name":"ValidatorError","properties":{"type":"user defined","path":"username","value":"ccc./"},"kind":"user defined","path":"username","value":"ccc./","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `ccc./`\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 17:16:39 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:16:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:17:09 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `erd./`","errors":{"email":{"message":"Validator failed for path `email` with value `cccc`","name":"ValidatorError","properties":{"type":"user defined","path":"email","value":"cccc"},"kind":"user defined","path":"email","value":"cccc","$isValidatorError":true},"username":{"message":"Validator failed for path `username` with value `erd./`","name":"ValidatorError","properties":{"type":"user defined","path":"username","value":"erd./"},"kind":"user defined","path":"username","value":"erd./","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `cccc`, username: Validator failed for path `username` with value `erd./`\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 17:17:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:17:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:17:34 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `sss`, username: Validator failed for path `username` with value `sss./`","errors":{"email":{"message":"Validator failed for path `email` with value `sss`","name":"ValidatorError","properties":{"type":"user defined","path":"email","value":"sss"},"kind":"user defined","path":"email","value":"sss","$isValidatorError":true},"username":{"message":"Validator failed for path `username` with value `sss./`","name":"ValidatorError","properties":{"type":"user defined","path":"username","value":"sss./"},"kind":"user defined","path":"username","value":"sss./","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `sss`, username: Validator failed for path `username` with value `sss./`\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 17:17:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:18:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:18:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:19:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:19:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:19:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:19:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:23:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:23:13 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:23:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:23:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:23:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:23:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:23:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:24:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:24:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:24:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:24:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:24:41 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:26:47 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:26:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:27:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:27:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:27:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:27:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:27:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:28:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:28:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:28:44 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:28:45 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:32:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:32:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:35:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:35:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:35:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:35:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:36:27 GMT+0300 (Belarus Standard Time)"}
+{"message":"Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `ddd`, username: Validator failed for path `username` with value `ddd./`","errors":{"email":{"message":"Validator failed for path `email` with value `ddd`","name":"ValidatorError","properties":{"type":"user defined","path":"email","value":"ddd"},"kind":"user defined","path":"email","value":"ddd","$isValidatorError":true},"username":{"message":"Validator failed for path `username` with value `ddd./`","name":"ValidatorError","properties":{"type":"user defined","path":"username","value":"ddd./"},"kind":"user defined","path":"username","value":"ddd./","$isValidatorError":true}},"_message":"User validation failed","stack":"ValidationError: Error occured during creating user operation\nUser validation failed: email: Validator failed for path `email` with value `ddd`, username: Validator failed for path `username` with value `ddd./`\n    at new ValidationError (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\error\\validation.js:27:11)\n    at model.Document.invalidate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1656:32)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\document.js:1528:17\n    at Immediate._onImmediate (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\mongoose\\lib\\schematype.js:785:9)\n    at runCallback (timers.js:789:20)\n    at tryOnImmediate (timers.js:751:5)\n    at processImmediate [as _immediateCallback] (timers.js:722:5)","name":"ValidationError","status":500,"level":"error","timestamp":"Mon Feb 05 2018 17:36:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:36:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:37:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:37:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:37:33 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:37:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:37:40 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:37:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/register","timestamp":"Mon Feb 05 2018 17:38:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:38:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:38:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:38:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:38:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:38:46 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:38:50 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:38:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:38:51 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:38:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:38:54 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:38:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:39:03 GMT+0300 (Belarus Standard Time)"}
+{"message":"Failed to lookup view \"/blogs/edit/5a7857bdd96334247c9c5163\" in views directory \"d:\\FrontCamp\\NODE.Express\\Homework\\views\"","stack":"Error: Failed to lookup view \"/blogs/edit/5a7857bdd96334247c9c5163\" in views directory \"d:\\FrontCamp\\NODE.Express\\Homework\\views\"\n    at Function.render (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\application.js:580:17)\n    at ServerResponse.render (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\response.js:1008:7)\n    at router.post (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:136:11)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at checkAuthenticated (d:\\FrontCamp\\NODE.Express\\Homework\\js\\auth.js:5:14)\n    at router.use (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:16:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:317:13)","view":{"defaultEngine":"pug","ext":".pug","name":"/blogs/edit/5a7857bdd96334247c9c5163","root":"d:\\FrontCamp\\NODE.Express\\Homework\\views"},"level":"error","timestamp":"Mon Feb 05 2018 17:39:03 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:39:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:39:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:40:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:40:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:40:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:40:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:41:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:41:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:41:01 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:41:04 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:41:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:41:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a786d0497104c11287d4001","timestamp":"Mon Feb 05 2018 17:41:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:43:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:43:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:43:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:43:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:43:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:43:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:43:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:43:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:43:34 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:43:42 GMT+0300 (Belarus Standard Time)"}
+{"message":"blog is not defined","stack":"ReferenceError: blog is not defined\n    at router.post (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:132:32)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at checkAuthenticated (d:\\FrontCamp\\NODE.Express\\Homework\\js\\auth.js:5:14)\n    at router.use (d:\\FrontCamp\\NODE.Express\\Homework\\routes\\blogs.js:16:3)\n    at Layer.handle [as handle_request] (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:284:7\n    at param (d:\\FrontCamp\\NODE.Express\\Homework\\node_modules\\express\\lib\\router\\index.js:354:14)","level":"error","timestamp":"Mon Feb 05 2018 17:43:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:44:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:44:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:44:22 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:44:23 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/users/login","timestamp":"Mon Feb 05 2018 17:44:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:44:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:44:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:44:26 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:44:28 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:44:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a786dcf917e932d64341c6e","timestamp":"Mon Feb 05 2018 17:44:38 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/edit/5a786dd6917e932d64341c6f","timestamp":"Mon Feb 05 2018 17:44:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:45:05 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:45:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 17:45:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 17:45:09 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"POST http://localhost:8008/blogs/add","timestamp":"Mon Feb 05 2018 17:45:14 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/","timestamp":"Mon Feb 05 2018 17:45:27 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:45:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:45:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"DELETE http://localhost:8008/blogs/5a7857bdd96334247c9c5163","timestamp":"Mon Feb 05 2018 17:45:31 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"GET http://localhost:8008/blogs","timestamp":"Mon Feb 05 2018 17:45:32 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:45:48 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:45:49 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:45:52 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:45:53 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:45:55 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:45:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:45:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:06 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:11 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:12 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:17 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:18 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:24 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:29 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:30 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:36 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:37 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:42 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:43 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:56 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:46:57 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:46:59 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:47:00 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:47:07 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:47:08 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:47:19 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:47:20 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Blogs API started","timestamp":"Mon Feb 05 2018 17:47:25 GMT+0300 (Belarus Standard Time)"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"Mon Feb 05 2018 17:47:26 GMT+0300 (Belarus Standard Time)"}
