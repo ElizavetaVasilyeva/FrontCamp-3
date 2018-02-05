@@ -24,7 +24,7 @@ html(lang="en")
             div.error
              ul
               each error, i in errors
-                li= error.msg
+                li= error.msg || error.message
         block content
    
      footer.footer

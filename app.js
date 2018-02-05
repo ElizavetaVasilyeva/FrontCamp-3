@@ -7,9 +7,11 @@ const expressValidator = require('express-validator');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+const args = require('minimist')(process.argv.slice(2));
+const config = require('./config/config');
 
-let users = require('./routes/users');
-let blogs = require('./routes/blogs');
+const users = require('./routes/users');
+const blogs = require('./routes/blogs');
 
 const app = express();
 app.set('views', path.join(__dirname, 'views'));
@@ -20,11 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('express-jquery')('/jquery.js'));
 
-app.use(session({
-  secret: 'keyboard cat',
-  resave: true,
-  saveUninitialized: true
-}));
+app.use(session(config.session));
 
 app.use(require('connect-flash')());
 app.use((req, res, next) => {
@@ -34,9 +32,9 @@ app.use((req, res, next) => {
 
 app.use(expressValidator({
   errorFormatter: (param, msg, value) => {
-    var namespace = param.split('.')
-      , root = namespace.shift()
-      , formParam = root;
+    var namespace = param.split('.'),
+      root = namespace.shift(),
+      formParam = root;
 
     while (namespace.length) {
       formParam += '[' + namespace.shift() + ']';
@@ -58,23 +56,23 @@ app.get('*', (req, res, next) => {
   next();
 });
 
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   log.info(req.method, `${req.protocol}://${req.get('host')}${req.originalUrl}`);
   next();
 });
 
 app.get('/', (req, res) => {
   res.render('index', { welcoming: 'Welcome to Blogs API!' });
-})
+});
 
 app.use('/blogs', blogs);
 app.use('/users', users);
 
-app.use(function (err, req, res, next) {
+app.use((err, req, res, next) => {
   log.error(err);
   res.render('error', { errorMessage: err.message, status: err.status });
-})
+});
 
-app.listen(8008, () => {
+app.listen(args.port, () => {
   log.info('Blogs API started');
-})
+});

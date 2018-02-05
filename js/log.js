@@ -5,8 +5,8 @@ const args = require('minimist')(process.argv.slice(2));
 function getLogger(config, flag) {
   if (flag === config.env.dev) {
     var transports = [
-      new winston.transports.Console(config.consoleLogger),
-      new winston.transports.File(config.fileLogger)
+      new winston.transports.Console(config.winston.console),
+      new winston.transports.File(config.winston.file)
     ];
 
     return new winston.Logger({

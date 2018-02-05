@@ -14,6 +14,7 @@
     "express-validator": "^4.3.0",
     "minimist": "^1.2.0",
     "mongoose": "^5.0.2",
+    "mongoose-validators": "^0.1.0",
     "nodemon": "^1.14.11",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
@@ -22,8 +23,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "./node_modules/.bin/nodemon ./app.js --env dev",
-    "prod": "./node_modules/.bin/nodemon ./app.js --env prod"
+    "dev": "./node_modules/.bin/nodemon ./app.js --env dev --port 8008",
+    "prod": "./node_modules/.bin/nodemon ./app.js --env prod --port 8008"
   },
   "author": "",
   "license": "ISC"

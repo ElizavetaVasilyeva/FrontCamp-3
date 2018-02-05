@@ -2,7 +2,7 @@ extends layout
 
 block content
   h2= blog.title
-  h3 Written by #{author}
+  h3 Written by #{author} at #{blog.date.toLocaleDateString('en-US')}
   p #{blog.body}
   if user
     if user.name == blog.author  

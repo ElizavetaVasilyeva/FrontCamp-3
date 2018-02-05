@@ -5,15 +5,20 @@ const constants = require('../helpers/constants');
 const bcrypt = require('bcryptjs')
 const passport = require('passport');
 const expressValidator = require('express-validator');
+const messages = require('../helpers/messages');
+const helper = require('../helpers/helper');
+const validator = require('../js/validation');
 
-let User = require('../models/user');
+const User = require('../models/user');
 
 router.use(expressValidator({
   customValidators: {
     isUsernameAvailable(username) {
       return new Promise((resolve, reject) => {
-        User.findOne({ username: username }, (err, user) => {
-          if (err) throw err;
+        User.findOne({ username }, (err, user) => {
+          if (err) {
+            throw err;
+          }
           if (user == null) {
             resolve();
           } else {
@@ -23,35 +28,20 @@ router.use(expressValidator({
       });
     }
   }
-})
-);
+}));
 
 router.get('/register', (req, res) => {
   res.render('register')
 });
 
 router.post('/register', (req, res, next) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const username = req.body.username;
-  const password = req.body.password;
-  const password2 = req.body.password2;
+  const { name, email, username, password, password2 } = req.body;
 
-  req.checkBody('name', 'Name is required').notEmpty();
-  req.checkBody('email', 'Email is required').notEmpty();
-  req.checkBody('email', 'Email is not valid').isEmail();
-  req.checkBody('username', 'Username is required').notEmpty();
-  req.checkBody('username', 'Username already in use').isUsernameAvailable();
-  req.checkBody('password', 'Password is required').notEmpty();
-  req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
+  //ui validation
+  validator.ValidateUser(req);
 
   req.asyncValidationErrors().then(() => {
-    let newUser = new User({
-      name: name,
-      email: email,
-      username: username,
-      password: password
-    });
+    const newUser = Object.assign(new User(), { name, email, username, password });
 
     bcrypt.genSalt(10, (err, salt) => {
       bcrypt.hash(newUser.password, salt, (err, hash) => {
@@ -59,13 +49,18 @@ router.post('/register', (req, res, next) => {
           log.error(err);
         }
         newUser.password = hash;
+        // db validation
+        var error = newUser.validateSync();
+        if (error && error.errors) {
+          res.render('register', { errors: error.errors });
+        }
         User.create(newUser)
           .then(user => {
-            req.flash('success', 'You are registered!')
+            req.flash('success', messages.USER_REGISTERED);
             res.redirect('/users/login');
           })
           .catch(err => {
-            err.message = `Error occured during creating user operation\n${err.message}`;
+            helper.prepareError(err, constants.SERVER_ERROR, messages.ERROR_CREATE_USER);
             next(err);
           });
       });
@@ -73,9 +68,7 @@ router.post('/register', (req, res, next) => {
   })
     .catch((errors) => {
       if (errors) {
-        res.render('register', {
-          errors: errors
-        })
+        res.render('register', { errors })
       }
     });
 });
@@ -94,7 +87,7 @@ router.post('/login', (req, res, next) => {
 
 router.get('/logout', (req, res) => {
   req.logout();
-  req.flash('info', 'You are logged out!');
+  req.flash('info', messages.LOGOUT);
   res.redirect('/users/login');
 });
 
