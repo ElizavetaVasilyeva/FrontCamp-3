@@ -1,17 +1,15 @@
 import React from 'react';
 import './formErrors.css'
 
-const FormErrors = ({ formErrors }) =>
-  <div className='formErrors'>
-    {Object.keys(formErrors).map((fieldName, i) => {
-      if (formErrors[fieldName].length > 0) {
-        return (
-          <p key={i}>{fieldName} {formErrors[fieldName]}</p>
-        )
-      } else {
-        return '';
-      }
-    })}
-  </div>
+function FormErrors({ formErrors }) {
+  return (
+    <div className='formErrors'>
+      {Object.keys(formErrors).map((fieldName) => {
+        return formErrors[fieldName].length > 0 ?
+          <p key={fieldName}>{fieldName} {formErrors[fieldName]}</p> : '';
+      })}
+    </div>
+  )
+}
 
 export default FormErrors;

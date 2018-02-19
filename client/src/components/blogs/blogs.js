@@ -17,7 +17,6 @@ class Blogs extends Component {
       .then(res => res.json())
       .then(blogs => {
         this.setState({ blogs }, () => {
-          console.log('Blogs fetched...', blogs)
         })
       }
       );
@@ -25,6 +24,12 @@ class Blogs extends Component {
 
   onChange = (e) => {
     this.setState({ filter: e.target.value });
+  }
+
+  filterData = () => {
+    return this.state.blogs
+      .filter(blog => this.state.filter !== '' ? blog.author.toLowerCase()
+      .includes(this.state.filter.toLowerCase()) : blog);
   }
 
   render() {
@@ -39,7 +44,7 @@ class Blogs extends Component {
         </div>
         <br />
         <ul>
-          {this.state.blogs.filter(blog => this.state.filter !== '' ? blog.author.toLowerCase().includes(this.state.filter.toLowerCase()) : blog).map((blog) =>
+          {this.filterData().map((blog) =>
             <li key={blog._id}>
               <p><Link to={`/blog/${blog._id}`}>{blog.title}</Link> <span className='author'>({blog.author})</span></p>
             </li>
