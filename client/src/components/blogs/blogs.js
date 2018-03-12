@@ -19,10 +19,6 @@ class Blogs extends Component {
     blogs: PropTypes.object.isRequired
   }
 
-  static defaultProps = {
-    blogs: {}
-  }
-
   componentWillMount() {
     this.props.getBlogs();
   }

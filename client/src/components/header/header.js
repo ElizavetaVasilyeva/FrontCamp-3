@@ -6,15 +6,7 @@ import { connect } from 'react-redux';
 
 class Header extends Component {
   render() {
-    if (this.props.isLoggedIn)
-      return (
-        <LoggedInNav />
-      )
-    else {
-      return (
-        <LoggedOutNav />
-      )
-    }
+    return this.props.isLoggedIn ? < LoggedInNav /> : <LoggedOutNav />;
   }
 }
 

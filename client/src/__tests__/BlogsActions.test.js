@@ -1,18 +1,13 @@
-import * as blogsActions from '../store/actions/blog'
-import configureMockStore from 'redux-mock-store'
-import thunk from 'redux-thunk'
+import * as blogsActions from '../store/actions/blog';
+import Constants from '../helpers/constants'; 
 
-const middlewares = [thunk];
-const mockStore = configureMockStore(middlewares);
 let store = mockStore();
 
 const mockResponse = (status, statusText, response) => {
   return new window.Response(response, {
     status: status,
     statusText: statusText,
-    headers: {
-      'Content-type': 'application/json'
-    }
+    headers: Constants.JSON_HEADER
   });
 };
 

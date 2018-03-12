@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import FormErrors from '../errors/formErrors';
 import Constants from '../../helpers/constants';
+import Helper from '../../helpers/helper';
 import FormElement from '../formElements/formElement';
 import './create.css';
 import { connect } from 'react-redux';
@@ -48,11 +49,11 @@ class Create extends Component {
     switch (fieldName) {
       case 'title':
         titleValid = value.length >= Constants.MIN_LENGTH && value.length <= Constants.MAX_LENGTH;
-        formErrors.title = titleValid ? '' : ' is invalid';
+        formErrors.title = Helper.isValid(titleValid);
         break;
       case 'body':
         bodyValid = value.length > Constants.ZERO_LENGTH;
-        formErrors.body = bodyValid ? '' : ' is invalid';
+        formErrors.body = Helper.isValid(bodyValid);
         break;
       default:
         break;
@@ -68,24 +69,20 @@ class Create extends Component {
     this.setState({ formValid: this.state.titleValid && this.state.bodyValid });
   }
 
-  errorClass(error) {
-    return (error.length === Constants.ZERO_LENGTH ? '' : 'has-error');
-  }
-
   render() {
-    const { title, body } = this.state;
+    const { title, body, formErrors, formValid } = this.state;
     return (
       <div>
         <h2> Add Blog</h2>
         <div className="flex two center">
-          <FormErrors formErrors={this.state.formErrors} />
+          <FormErrors formErrors={formErrors} />
         </div>
         <div className="flex two center">
           <form onSubmit={this.onSubmit}>
-            <FormElement errorElement={this.state.formErrors.title} element={title} name='title' onChange={this.onChange} />
-            <FormElement errorElement={this.state.formErrors.author} element={this.props.username} name='author' disable="true" />
-            <FormElement errorElement={this.state.formErrors.body} element={body} name='body' onChange={this.onChange} />
-            <button type="submit" disabled={!this.state.formValid} className="btn btn-default">Submit</button>
+            <FormElement errorElement={formErrors.title} element={title} name='title' onChange={this.onChange} />
+            <FormElement errorElement={formErrors.author} element={this.props.username} name='author' disable="true" />
+            <FormElement errorElement={formErrors.body} element={body} name='body' onChange={this.onChange} />
+            <button type="submit" disabled={!formValid} className="btn btn-default">Submit</button>
             <Link to="/blogs" className="button back"><span aria-hidden="true"></span> Back </Link>
           </form>
         </div>

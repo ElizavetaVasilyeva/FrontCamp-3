@@ -1,18 +1,14 @@
 import React from 'react';
-import { configure, mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { Redirect, MemoryRouter } from 'react-router';
 import AppRoutes from '../components/routes';
 import Index from '../components/index/index';
 import Create from '../components/createBlog/create';
-import Adapter from 'enzyme-adapter-react-16';
-import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 
-configure({ adapter: new Adapter() });
 const initialState = { auth: { isLoggedIn: true } }
 
 describe('Routes tests', () => {
-  const mockStore = configureStore();
   let store, wrapper;
 
   beforeEach(() => {
@@ -20,7 +16,7 @@ describe('Routes tests', () => {
   })
 
   it('Index route', () => {
-
+ wrapper = shallow(<AppRoutes/>);
     wrapper = mount(
       <MemoryRouter initialEntries={['/whatever']}>
         <AppRoutes store={store} />

@@ -1,10 +1,11 @@
 import { USERS } from './constants';
+import Constants from '../../helpers/constants'; 
 
 export const login = (values) => dispatch => {
   fetch('/users/login', {
     method: 'POST',
     body: values,
-    headers: { "Content-Type": "application/json" },
+    headers: Constants.JSON_HEADER,
   })
     .then(
       res => res.json()
@@ -18,7 +19,7 @@ export const register = (values) => dispatch => {
   fetch('/users/register', {
     method: 'POST',
     body: JSON.stringify({ name: values.name, email: values.email, username: values.username, password: values.password1 }),
-    headers: { "Content-Type": "application/json" },
+    headers: Constants.JSON_HEADER,
   })
     .then(
       response => response.json(),

@@ -45,25 +45,9 @@ class Login extends Component {
   }
 }
 
-const asyncValidate = (values, dispatch) => {
-  return fetch('/users/checkUser', {
-    method: 'POST',
-    body: JSON.stringify({ username: values.username, password: values.password }),
-    headers: { "Content-Type": "application/json" },
-    credentials: 'same-origin'
-  })
-    .then(response => response.json())
-    .then(response => {
-      if (response.errors) {
-        throw response.errors
-      }
-    }
-    )
-}
-
 const form = reduxForm({
   form: "login",
-  asyncValidate,
+  asyncValidate: validationsHelpers.asyncValidate,
   asyncBlurFields: ['username', 'password']
 })(Login)
 

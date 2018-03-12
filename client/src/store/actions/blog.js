@@ -1,4 +1,5 @@
 import { BLOGS } from './constants';
+import Constants from '../../helpers/constants'; 
 
 export const getBlogs = () => dispatch => {
   return fetch('/blogs')
@@ -16,9 +17,7 @@ export const deleteBlog = (id, callback) => dispatch => {
   fetch('/blogs/' + id, {
     method: 'DELETE',
     mode: 'CORS',
-    headers: {
-      'Content-Type': 'application/json'
-    }
+    headers: Constants.JSON_HEADER
   }).then(res => {
     callback();
     dispatch({ type: BLOGS.DELETE_BLOG, payload: id })
@@ -30,9 +29,7 @@ export const createBlog = (values, callback) => dispatch => {
     method: 'POST',
     mode: 'CORS',
     body: values,
-    headers: {
-      'Content-Type': 'application/json'
-    }
+    headers: Constants.JSON_HEADER
   })
     .then(res => res.json())
     .then(res => {
@@ -42,14 +39,11 @@ export const createBlog = (values, callback) => dispatch => {
 }
 
 export const editBlog = (id, values, callback) => dispatch => {
-  console.log(values);
   fetch('/blogs/' + id, {
     method: 'PUT',
     mode: 'CORS',
     body: values,
-    headers: {
-      'Content-Type': 'application/json'
-    }
+    headers: Constants.JSON_HEADER
   })
     .then(res => res.json())
     .then(res => {

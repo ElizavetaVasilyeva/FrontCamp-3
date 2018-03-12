@@ -1,10 +1,6 @@
 import React from 'react';
-import Constants from '../../helpers/constants';
+import Helper from '../../helpers/helper'
 import './formElement.css'
-
-const errorClass = (error) => {
-  return (error.length === Constants.ZERO_LENGTH ? '' : 'has-error');
-}
 
 const GetElement = (name, element, onChange, disable = false) => {
   switch (name) {
@@ -17,7 +13,7 @@ const GetElement = (name, element, onChange, disable = false) => {
 
 function FormElement({ errorElement, element, name, onChange, disable = false }) {
   return (
-    <div className={`form-group ${errorClass(errorElement)}`}>
+    <div className={`form-group ${Helper.errorClass(errorElement)}`}>
       <label>{name}</label>
       {GetElement(name, element, onChange, disable)}
     </div>

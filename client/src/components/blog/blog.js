@@ -14,10 +14,6 @@ class Blog extends Component {
     blog: PropTypes.object.isRequired
   }
 
-  static defaultProps = {
-    blog: {}
-  }
-
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.getBlog(id);
@@ -30,17 +26,18 @@ class Blog extends Component {
   }
 
   render() {
+    const {blog, username} = this.props;
     return (
-      <Loader loaded={this.props.blog}>
+      <Loader loaded={blog}>
         <div>
-          <h2> {this.props.blog.title}</h2>
+          <h2> {blog.title}</h2>
           <div className="textCenter">
-            <h3>Written by {this.props.blog.author} at {Helper.GetLocalDateString(this.props.blog.date)}</h3>
-            <p>{this.props.blog.body}</p>
-            {this.props.blog.author === this.props.username &&
+            <h3>Written by {blog.author} at {Helper.GetLocalDateString(blog.date)}</h3>
+            <p>{blog.body}</p>
+            {blog.author === username &&
               <fieldset>
-                <Link to={`/edit/${this.props.blog._id}`} className="button info">Edit</Link>&nbsp;
-            <button onClick={this.delete.bind(this, this.props.blog._id)} className="button red">Delete</button>
+                <Link to={`/edit/${blog._id}`} className="button info">Edit</Link>&nbsp;
+            <button onClick={this.delete.bind(this, blog._id)} className="button red">Delete</button>
               </fieldset>
             }
             <Link to="/blogs" className="button back"><span aria-hidden="true"></span> Back</Link>
