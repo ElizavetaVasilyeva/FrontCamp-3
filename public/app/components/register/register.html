@@ -1,0 +1,38 @@
+<div class="centerDiv">
+    <h2>Register</h2>
+    <form name="registerForm" ng-submit="registerUser(registerForm.$valid)">
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.name.$invalid && !registerForm.name.$pristine }">
+            Name:
+            <input type="text" name="name" class="form-control" ng-model="userData.name" required />
+            <p ng-show="registerForm.name.$invalid && !registerForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.username.$invalid && !registerForm.username.$pristine }">
+            Username:
+            <input type="text" name="username" class="form-control" ng-model="userData.username" ng-minlength="3" />
+            <p ng-show="registerForm.username.$error.minlength" class="help-block">Username is too short.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.email.$invalid && !registerForm.email.$pristine }">
+            Email:
+            <input type="email" name="email" class="form-control" ng-model="userData.email" required />
+            <p ng-show="registerForm.email.$invalid && !registerForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.password.$invalid && !registerForm.password.$pristine }">
+
+            Password:
+            <input type="password" name="password" class="form-control" ng-model="userData.password" required />
+            <p ng-show="registerForm.password.$invalid && !registerForm.password.$pristine" class="help-block">You password is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.password2.$invalid && !registerForm.password2.$pristine ||
+         registerForm.password.$viewValue != '' && (registerForm.password.$viewValue !== registerForm.password2.$viewValue) }">
+            Confirm password:
+            <input type="password" name="password2" class="form-control" ng-model="userData.password2" required />
+            <p ng-show="registerForm.password2.$invalid && !registerForm.password2.$pristine" class="help-block">You confirm password is required.</p>
+            <p ng-show="registerForm.password.$viewValue != '' && (registerForm.password.$viewValue !== registerForm.password2.$viewValue)"
+                class="help-block">Password mismatch.</p>
+        </div>
+
+        <button class="valid-button" type="submit" ng-disabled="registerForm.$invalid || registerForm.password.$viewValue !== registerForm.password2.$viewValue">
+            Register
+        </button>
+    </form>
+</div>

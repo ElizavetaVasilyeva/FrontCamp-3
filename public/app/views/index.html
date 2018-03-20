@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDoApp">
+
+<head>
+  <base href='/'>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/picnic">
+  <link rel="stylesheet" href="app/views/index.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js'></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+  <script type="text/javascript" src="app/app.module.js"></script>
+  <script type="text/javascript" src="app/app.config.js"></script>
+
+  <!--Services-->
+
+  <script type="text/javascript" src="app/services/authService/auth.module.js"></script>
+  <script type="text/javascript" src="app/services/authService/auth.service.js"></script>
+
+  <script type="text/javascript" src="app/services/userService/user.module.js"></script>
+  <script type="text/javascript" src="app/services/userService/user.service.js"></script>
+
+  <script type="text/javascript" src="app/services/todosService/todos.module.js"></script>
+  <script type="text/javascript" src="app/services/todosService/todos.service.js"></script>
+
+  <!--Components-->
+  <script type="text/javascript" src="app/components/todos/todos.module.js"></script>
+  <script type="text/javascript" src="app/components/todos/todos.component.js"></script>
+
+  <script type="text/javascript" src="app/components/todo/todo.module.js"></script>
+  <script type="text/javascript" src="app/components/todo/todo.component.js"></script>
+
+  <script type="text/javascript" src="app/components/createtodo/createtodo.module.js"></script>
+  <script type="text/javascript" src="app/components/createtodo/createtodo.component.js"></script>
+
+  <script type="text/javascript" src="app/components/editToDo/editToDo.module.js"></script>
+  <script type="text/javascript" src="app/components/editToDo/editToDo.component.js"></script>
+
+  <script type="text/javascript" src="app/components/login/login.module.js"></script>
+  <script type="text/javascript" src="app/components/login/login.component.js"></script>
+
+  <script type="text/javascript" src="app/components/register/register.module.js"></script>
+  <script type="text/javascript" src="app/components/register/register.component.js"></script>
+
+  <script type="text/javascript" src="app/components/header/header.module.js"></script>
+  <script type="text/javascript" src="app/components/header/header.component.js"></script>
+
+  <script type="text/javascript" src="app/components/todosList/todosList.module.js"></script>
+  <script type="text/javascript" src="app/components/todosList/todosList.component.js"></script>
+
+ <!--Directives-->
+ <script type="text/javascript" src="app/directives/todosDirective/todosFilter.module.js"></script>
+  <script type="text/javascript" src="app/directives/todosDirective/todosFilter.directive.js"></script>
+
+  <title>TODO App</title>
+</head>
+
+<body>
+  <header></header>
+  <div class="mainDiv">
+    <div class="visual flex one" ng-view></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-footer textCenter">
+      <p>Copyright &copy; 2018 </p>
+    </div>
+  </footer>
+</body>
+
+</html>

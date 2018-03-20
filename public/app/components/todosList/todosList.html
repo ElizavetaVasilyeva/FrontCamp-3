@@ -1,0 +1,11 @@
+<diV>
+    <h3>{{$ctrl.title}}</h3>
+    <ul>
+        <li ng-repeat="each in $ctrl.todos | orderBy: $ctrl.order | myfilter: $ctrl.query : $ctrl.type">
+            <p>
+                <a href='/todos/{{each._id}}'>{{each.context}}</a>
+                <span class='date'>({{each.createdDate | date:'yyyy-MM-dd'}})</span>
+            </p>
+        </li>
+    </ul>
+</div>

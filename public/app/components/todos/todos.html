@@ -1,0 +1,62 @@
+<div>
+    <h2> All ToDos</h2>
+    <h4>
+        <a class="button valid" href="/createtodo">Add ToDo</a>
+    </h4>
+    <br />
+    <div class="flex three">
+        <div>
+            <input type='text' ng-model='query.createdDate' class='form-control' placeholder='Filter by date' />
+        </div>
+        <div>
+            <input type='text' ng-model='query.context' class='form-control' placeholder='Filter by context' />
+        </div>
+        <div>
+            <select class='form-control' ng-model='order'>
+                <option value='-createdDate'>Recent</option>
+                <option value='createdDate'>Older</option>
+                <option value='context'>A-Z</option>
+                <option value='-context'>Z-A</option>
+            </select>
+        </div>
+    </div>
+    <br />
+    <div class="flex three todos">
+        <todos-list class="planned" todos="todos" query="query" order="order" type="planned" title="Planned"></todos-list>
+        <todos-list class="inprogress" todos="todos" query="query" order="order" type="inprogress" title="In progress"></todos-list>
+        <todos-list class="done" todos="todos" query="query" order="order" type="done" title="Done"></todos-list>
+        <!-- <diV class="planned">
+            <h3>Planned</h3>
+            <ul>
+                <li ng-repeat="each in todos | orderBy: order | myfilter: query : 'planned'">
+                    <p>
+                        <a href='/todos/{{each._id}}'>{{each.context}}</a>
+                        <span class='date'>({{each.createdDate | date:'yyyy-MM-dd'}})</span>
+                    </p>
+                </li>
+            </ul>
+        </diV>
+        <diV class="inprogress">
+            <h3>In progress</h3>
+            <ul>
+                <li ng-repeat="each in todos | orderBy: order | myfilter : query : 'inprogress'">
+                    <p>
+                        <a href='/todos/{{each._id}}'>{{each.context}}</a>
+                        <span class='date'>({{each.createdDate | date:'yyyy-MM-dd'}})</span>
+                    </p>
+                </li>
+            </ul>
+        </diV>
+        <div class="done">
+            <h3>Done</h3>
+            <ul>
+                <li ng-repeat="each in todos | orderBy: order | myfilter: query : 'done'">
+                    <p>
+                        <a href='/todos/{{each._id}}'>{{each.context}}</a>
+                        <span class='date'>({{each.createdDate | date:'yyyy-MM-dd'}})</span>
+                    </p>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+</div>
