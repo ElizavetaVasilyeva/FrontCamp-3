@@ -1,0 +1,19 @@
+<div class="centerDiv">
+  <h2>Login</h2>
+  <form name="loginForm" ng-submit="doLogin(loginForm.$valid)">
+    <div class='has-error'>
+      <p>{{error}}</p>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : loginForm.username.$invalid && !loginForm.username.$pristine }">
+      <label>Username: </label>
+      <input type="text" name="username" class="form-control" ng-model="loginData.username" required/>
+      <p ng-show="loginForm.username.$invalid && !loginForm.username.$pristine" class="help-block">You username is required.</p>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+      <label>Password: </label>
+      <input type="password" name="password" class="form-control" ng-model="loginData.password" required/>
+      <p ng-show="loginForm.password.$invalid && !loginForm.password.$pristine" class="help-block">You password is required.</p>
+    </div>
+    <button class="valid-button" type="submit" ng-disabled="loginForm.$invalid">Login</button>
+  </form>
+</div>

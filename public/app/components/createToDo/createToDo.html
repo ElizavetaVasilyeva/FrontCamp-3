@@ -1,0 +1,35 @@
+<div>
+    <h2 class="textCenter"> Add ToDo</h2>
+    <div class="flex two center">
+        <form name='addToDoForm' ng-submit="create(addToDoForm.$valid)">
+            <div class="form-group" ng-class="{ 'has-error' : addToDoForm.context.$invalid && !addToDoForm.context.$pristine }">
+                <label>Context:</label>
+                <input type="text" name="context" class="form-control" ng-model="todoData.context" ng-minlength="20" required/>
+                <p ng-show="addToDoForm.context.$invalid && !addToDoForm.context.$pristine" class="help-block">Context is required.</p>
+                <p ng-show="addToDoForm.context.$error.minlength" class="help-block">Context is too short.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : addToDoForm.status.$invalid && !addToDoForm.status.$pristine }">
+                <label>Status: </label>
+                <div>
+                    <label>
+                        <input type='radio' name="status" value="Planned" ng-model="todoData.status" required>
+                        <span class="checkable">Planned</span>
+                    </label>
+                    <label>
+                        <input type='radio' name="status" value="In progress" ng-model="todoData.status" required>
+                        <span class="checkable">In progress</span>
+                    </label>
+                    <label>
+                        <input type='radio' name="status" value="Done" ng-model="todoData.status" required>
+                        <span class="checkable">Done</span>
+                    </label>
+                    <p ng-show="addToDoForm.status.$invalid && !addToDoForm.status.$pristine" class="help-block">Status is required.</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-default" ng-disabled="addToDoForm.$invalid">Submit</button>
+            <a href="/todos" class="button back">
+                <span aria-hidden="true"></span> Back </a>
+        </form>
+    </div>
+</div>

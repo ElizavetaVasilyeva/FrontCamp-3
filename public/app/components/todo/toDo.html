@@ -1,0 +1,27 @@
+<div class="flex one">
+    <h2 class="textCenter">ToDo</h2>
+    <div class="textCenter">
+        <p><b>Context: </b>{{todo.context}}</p>
+        <div>
+            <b>Status: </b>
+            <label>
+                <input type='radio' name="status" value="Planned" disabled="true" ng-model="todo.status">
+                <span class="checkable">Planned</span>
+            </label>
+            <label>
+                <input type='radio' name="status" value="In progress" disabled="true" ng-model="todo.status">
+                <span class="checkable">In progress</span>
+            </label>
+            <label>
+                <input type='radio' name="status" value="Done" disabled="true" ng-model="todo.status">
+                <span class="checkable">Done</span>
+            </label>
+        </div>
+        <p><b>Created date: </b>{{todo.createdDate | date:'yyyy-MM-dd'}}</p>
+        <p ng-if="todo.resolvedDate"><b>Resolved date: </b>{{todo.resolvedDate | date:'yyyy-MM-dd'}}</p>
+        <a href='/editToDo/{{id}}' class="button info">Edit</a>&nbsp;
+        <button class="button red" ng-click="deleteToDo()">Delete</button>
+        <a href="/todos" class="button back">
+            <span aria-hidden="true"></span> Back</a>
+    </div>
+</div>

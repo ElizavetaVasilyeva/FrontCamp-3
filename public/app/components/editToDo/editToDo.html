@@ -1,0 +1,35 @@
+<div>
+    <h2 class="textCenter"> Edit ToDo</h2>
+    <div class="flex two center">
+        <form name="editToDoForm" ng-submit="editToDo(editToDoForm.$valid)">
+            <div class="form-group" ng-class="{ 'has-error' : editToDoForm.context.$invalid && !editToDoForm.context.$pristine }">
+
+                <label>Context:</label>
+                <input type="text" name="context" class="form-control" ng-model="todo.context" ng-minlength="20" required/>
+                <p ng-show="editToDoForm.context.$invalid && !editToDoForm.context.$pristine" class="help-block">Context is required.</p>
+                <p ng-show="editToDoForm.context.$error.minlength" class="help-block">Context is too short.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : editToDoForm.status.$invalid && !editToDoForm.status.$pristine }">
+                <label>Status: </label>
+                <div>
+                    <label>
+                        <input type='radio' name="status" value="Planned" ng-model="todo.status">
+                        <span class="checkable">Planned</span>
+                    </label>
+                    <label>
+                        <input type='radio' name="status" value="In progress" ng-model="todo.status">
+                        <span class="checkable">In progress</span>
+                    </label>
+                    <label>
+                        <input type='radio' name="status" value="Done" ng-model="todo.status">
+                        <span class="checkable">Done</span>
+                    </label>
+                    <p ng-show="editToDoForm.status.$invalid && !editToDoForm.status.$pristine" class="help-block">Status is required.</p>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default" ng-disabled="editToDoForm.$invalid">Submit</button>
+            <a href="/todos/{{id}}" class="button back">
+                <span aria-hidden="true"></span> Back </a>
+        </form>
+    </div>
+</div>
