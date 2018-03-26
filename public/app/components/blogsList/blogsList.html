@@ -1,0 +1,24 @@
+<div class="blogs">
+  <ul>
+    <li ng-repeat="each in vm.filtered = (vm.blogs | myfilter: vm.query) | orderBy: vm.order | pagination: vm.curPage * vm.pageSize | limitTo: vm.pageSize">
+      <p>
+        <a href='/blogs/{{each._id}}'>{{each.title}}</a>
+        <span class='date'>({{each.date | date:'yyyy-MM-dd' }})</span>
+      </p>
+    </li>
+  </ul>
+</div>
+
+<div class="pagination pagination-centered" ng-show="vm.filtered.length">
+  <ul class="pagination-controle pagination">
+    <li>
+      <button type="button" ng-disabled="vm.curPage == 0" ng-click="vm.curPage=vm.curPage-1"> &lt; PREV</button>
+    </li>
+    <li>
+      <span>Page {{vm.curPage + 1}} of {{ vm.numberOfPages() }}</span>
+    </li>
+    <li>
+      <button type="button" ng-disabled="vm.curPage >= vm.filtered.length/vm.pageSize - 1" ng-click="vm.curPage = vm.curPage+1">NEXT &gt;</button>
+    </li>
+  </ul>
+</div>

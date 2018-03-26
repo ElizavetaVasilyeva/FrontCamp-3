@@ -1,0 +1,177 @@
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+}
+
+body{
+    padding-top: 5rem;
+    margin-bottom: 4em;
+    height: auto;
+}
+
+.App-logo {
+    height: 100px;
+  }
+
+.mainDiv{
+    height: auto;
+}
+
+.textCenter{
+    text-align:center;
+}
+
+.buttonShow a{
+    color: #FFFFFF;
+}
+
+.visual {
+    text-align: left;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .3s ease;
+}
+
+span.mainInfo{
+    color: rgb(0, 116, 217);
+    white-space: pre-line;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    background-color: rgba(0, 116, 217, 0.2);
+  }
+  
+.container-footer {
+	padding: 5px 0;
+}
+
+div.centerDiv {
+    margin: 0px 250px;
+}
+
+a.button.green {
+    background: #39dd6d;
+    width:150px;
+    margin: 10px 10px;
+}
+
+button.red {
+    background: #e95252;
+    width:86px;
+    margin: 10px 10px;
+}
+
+a.button.back {
+    background: #39dd6d;
+    width:86px;
+    margin: 10px 10px;
+}
+
+a.button.info {
+    background: rgb(0, 116, 217);
+    width:86px;
+    margin: 10px 10px;
+}
+
+div.form-error {
+    margin-top: 5px;
+    background: #e95252;
+}
+
+.planned {
+    background: rgba(0, 116, 217, 0.2);
+}
+
+.inprogress {
+    background:rgba(193, 47, 47, 0.2)
+} 
+
+.done {
+    background: rgba(73, 226, 23, 0.2)
+}
+
+span.date {
+    color:rgba(90, 76, 76, 0.7);
+    font-size: 0.9rem;
+  }
+
+div.has-error p{
+    color: #e95252;
+}
+
+div.has-error input {
+    border-color: #e95252;
+}
+div.todos {
+    word-wrap: break-word;
+}
+
+  div.blogs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+   
+  div.blogs li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+   
+  div.blogs li:last-child {
+    border: none;
+  }
+   
+  div.blogs li a {
+    text-decoration: none;
+    color:  rgb(0, 116, 217);
+   
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+  }
+   
+  div.blogs li a:hover {
+    font-size: 30px;
+    background: #f6f6f6;
+  }
+
+  .blogs-list {
+      width: 100%;
+  }
+
+  .paginationclass{   
+    margin: 19px 28px;    
+  }
+
+  .paginationclass span{
+    margin-left:15px;
+    display:inline-block;
+}
+.pagination-controle li{
+    display: inline-block;
+}
+.pagination-controle button{
+    font-size: 12px;
+    cursor:pointer;
+    
+}
+.pagination{
+    margin:0px 150px;
+}
