@@ -1,0 +1,13 @@
+<div class="flex one">
+  <h2 class="textCenter">{{vm.blog.title}}</h2>
+  <div class="textCenter">
+    <h3>Written by {{vm.blog.author}} at {{vm.blog.date | date:'yyyy-MM-dd'}}</h3>
+    <p>{{vm.blog.body}}</p>
+    <fieldset ng-if="vm.blog.author == vm.user.name">
+      <a href='/editBlog/{{vm.id}}' class="button info">Edit</a>&nbsp;
+      <button class="button red" ng-click="vm.deleteBlog()">Delete</button>
+    </fieldset>
+    <a href="/blogs" class="button back">
+      <span aria-hidden="true"></span> Back</a>
+  </div>
+</div>
