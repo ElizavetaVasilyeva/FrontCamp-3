@@ -1,3 +1,6 @@
+/.vscode
 /node_modules
-
+/calculator/node_modules
+/coverage
+/public/app/coverage
 *.log

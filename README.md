@@ -1,49 +1,54 @@
 **EPAM Frontcamp 3 (2017-2018)**
 ---------------------------
-**Hometask 9 - React.js Part2**
+**Hometask 12 - Unit Tests**
 **Mentor - Vladislav Kovaliov**
 **Mentee - Lizaveta Vasilyeva**
 
-Blog system web-server based on React.js + Redux + express framework + mongoose ORM was implemented.
-Also in additional nodemon for development and
-logging mechanism winston were used.
+Blogs App based on AngularJS + express framework + mongoose ORM was covered with unit tests through the follow frameworks:
 
+ - Mocha 
+ - Chai 
+ - Karma 
+ - Jasmine
+ - in additional: attempts working with stryker
+ 
 **Steps to establish:**
 
- 1. Install dependencies for server through running commands:
+ - Install dependencies through running commands:
 
 	    npm install 
-	  
- 2. Install dependencies for client through running commands:
- 
-	    npm run client-install
 
- 3. Restore backup data. Move files within folder db_backups to
+ - Restore backup data. Move files within folder db_backups to
 
 	    ..\MongoDB\Server\3.6\bin\dump
     than run command
 
 		mongorestore
+
+ -  Run app
+
+		npm run start
     
- 4. Run the client & server with concurrently
+ - App runs on http://localhost:5000 
 
-		npm run dev
+ - Show log file **debug.log**
+ - Run tests 
 
- 5.  Run the Express server only
+	     npm run test
 
-		npm run server
+ - Run coverage on server (coverage on client are included in karma config by default)
 
- 6. Run the React client only
+	     npm run coverage_server
+	     
+   See result in folders coverage both on client and server
 
-	    npm run client
+ - Install mutator project
 
- 7. Run tests on client
+	    npm run calculator-install
 
-	    cd client
-	    npm run test
+ - Run stryker
 
- 8. Server runs on http://localhost:5000 and client on http://localhost:3000
- 9. Show log file **debug.log**
+	    npm run stryker
 
 		
 

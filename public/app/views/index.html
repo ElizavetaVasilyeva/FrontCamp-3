@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BlogsApp">
+
+<head>
+  <base href='/'>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/picnic">
+  <link rel="stylesheet" href="app/views/index.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.js'></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+  <script type="text/javascript" src="app/app.module.js"></script>
+  <script type="text/javascript" src="app/app.config.js"></script>
+
+  <!--Services-->
+
+  <script type="text/javascript" src="app/services/authService/auth.module.js"></script>
+  <script type="text/javascript" src="app/services/authService/auth.service.js"></script>
+  <script type="text/javascript" src="app/services/authService/authInterceptor.service.js"></script>
+  <script type="text/javascript" src="app/services/authService/authToken.service.js"></script>
+
+  <script type="text/javascript" src="app/services/userService/user.module.js"></script>
+  <script type="text/javascript" src="app/services/userService/user.service.js"></script>
+
+  <script type="text/javascript" src="app/services/blogsService/blogs.module.js"></script>
+  <script type="text/javascript" src="app/services/blogsService/blogs.service.js"></script>
+
+  <!--Components-->
+  <script type="text/javascript" src="app/components/blogs/blogs.module.js"></script>
+  <script type="text/javascript" src="app/components/blogs/blogs.component.js"></script>
+
+  <script type="text/javascript" src="app/components/blog/blog.module.js"></script>
+  <script type="text/javascript" src="app/components/blog/blog.component.js"></script>
+
+  <script type="text/javascript" src="app/components/createBlog/createBlog.module.js"></script>
+  <script type="text/javascript" src="app/components/createBlog/createBlog.component.js"></script>
+
+  <script type="text/javascript" src="app/components/editBlog/editBlog.module.js"></script>
+  <script type="text/javascript" src="app/components/editBlog/editBlog.component.js"></script>
+
+  <script type="text/javascript" src="app/components/login/login.module.js"></script>
+  <script type="text/javascript" src="app/components/login/login.component.js"></script>
+
+  <script type="text/javascript" src="app/components/register/register.module.js"></script>
+  <script type="text/javascript" src="app/components/register/register.component.js"></script>
+
+  <script type="text/javascript" src="app/components/header/header.module.js"></script>
+  <script type="text/javascript" src="app/components/header/header.component.js"></script>
+
+  <script type="text/javascript" src="app/components/blogsList/blogsList.module.js"></script>
+  <script type="text/javascript" src="app/components/blogsList/blogsList.component.js"></script>
+
+ <!--Directives-->
+ <script type="text/javascript" src="app/directives/blogsDirective/blogsFilter.module.js"></script>
+  <script type="text/javascript" src="app/directives/blogsDirective/blogsFilter.directive.js"></script>
+  <script type="text/javascript" src="app/directives/blogsDirective/pagination.directive.js"></script>
+
+  <title>BLOGS App</title>
+</head>
+
+<body>
+  <header></header>
+  <div class="mainDiv">
+    <div class="visual flex one" ng-view></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container-footer textCenter">
+      <p>Copyright &copy; 2018 </p>
+    </div>
+  </footer>
+</body>
+
+</html>

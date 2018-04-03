@@ -11,5 +11,6 @@ module.exports = {
       level: 'debug'
     },
   },
-  database: 'mongodb://localhost/frontcamp'
+  // database: 'mongodb://localhost/frontcamp',
+  secretKey: "LizasSecretKey"
 }

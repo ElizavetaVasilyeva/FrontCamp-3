@@ -1,8 +1,0 @@
-div.formErrors:not(:empty){
-    background: rgba(228, 70, 70, 0.7);
-}
-
-div.has-error input,
-div.has-error textarea{
-    border: solid red;
-}
