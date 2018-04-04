@@ -4,8 +4,8 @@
 
   function authInterceptor($q, $location, AuthToken) {
     var authInterceptorFactory = {
-      request: request,
-      responseError: responseError
+      request,
+      responseError
     };
 
     return authInterceptorFactory;
@@ -22,7 +22,7 @@
 
 
     function responseError(response) {
-      if (response.status == 403)
+      if (response.status === 403)
         $location.path('./login');
 
       return $q.reject(response);

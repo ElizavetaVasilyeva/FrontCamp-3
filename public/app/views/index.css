@@ -17,16 +17,12 @@ body{
     height: 100px;
   }
 
-.mainDiv{
+.main{
     height: auto;
 }
 
-.textCenter{
+.text-center{
     text-align:center;
-}
-
-.buttonShow a{
-    color: #FFFFFF;
 }
 
 .visual {
@@ -91,18 +87,6 @@ a.button.info {
 div.form-error {
     margin-top: 5px;
     background: #e95252;
-}
-
-.planned {
-    background: rgba(0, 116, 217, 0.2);
-}
-
-.inprogress {
-    background:rgba(193, 47, 47, 0.2)
-} 
-
-.done {
-    background: rgba(73, 226, 23, 0.2)
 }
 
 span.date {

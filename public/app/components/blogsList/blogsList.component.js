@@ -14,12 +14,12 @@
     .component('blogsList', componentConfig)
     .controller('blogsListController', blogsListController);
 
-  function blogsListController($scope) {
+  function blogsListController($scope, Data) {
     var vm = this;
 
     vm.numberOfPages = numberOfPages;
-    vm.curPage = 0;
-    vm.pageSize = 3;
+    vm.curPage = Data.curPage;
+    vm.pageSize = Data.pageSize;
 
 
     function numberOfPages() {
@@ -29,7 +29,7 @@
     };
 
     $scope.$watch('vm.query', function (newVal, oldVal) {
-      vm.curPage = 0;
+      vm.curPage = Data.curPage;
     }, true);
   }
 })();

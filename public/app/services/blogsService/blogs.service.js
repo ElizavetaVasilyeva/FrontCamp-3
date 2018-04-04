@@ -4,11 +4,11 @@
 
   function blog($http) {
     var blogFactory = {
-      allblogs: allblogs,
-      getBlogById: getBlogById,
-      create: create,
+      allblogs,
+      getBlogById,
+      create,
       delete: deleteBlog,
-      edit: edit
+      edit
     };
 
     return blogFactory;

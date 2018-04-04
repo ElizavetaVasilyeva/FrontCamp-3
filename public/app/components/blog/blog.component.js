@@ -29,7 +29,7 @@
 
         function deleteBlog() {
             Blog.delete($routeParams.id)
-                .then(data => {
+                .then(() => {
                     $location.path('/blogs');
                 });
         };

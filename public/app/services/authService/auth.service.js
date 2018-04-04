@@ -13,10 +13,10 @@
 
     return authFactory;
 
-    function login(data) {
+    function login({ username, password }) {
       return $http.post('/api/users/login', {
-        username: data.username,
-        password: data.password
+        username,
+        password
       })
         .then(res => {
           AuthToken.setToken(res.data.token);
@@ -29,12 +29,7 @@
     }
 
     function isLoggedIn() {
-      if (AuthToken.getToken()) {
-        return true;
-      }
-      else {
-        return false
-      }
+      return AuthToken.getToken() ? true : false;
     }
 
     function getUser() {

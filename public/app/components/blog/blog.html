@@ -1,6 +1,6 @@
 <div class="flex one">
-  <h2 class="textCenter">{{vm.blog.title}}</h2>
-  <div class="textCenter">
+  <h2 class="text-center">{{vm.blog.title}}</h2>
+  <div class="text-center">
     <h3>Written by {{vm.blog.author}} at {{vm.blog.date | date:'yyyy-MM-dd'}}</h3>
     <p>{{vm.blog.body}}</p>
     <fieldset ng-if="vm.blog.author == vm.user.name">

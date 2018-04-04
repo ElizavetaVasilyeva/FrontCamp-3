@@ -4,7 +4,7 @@
 
   function user($http) {
     var userFactory = {
-      create: create
+      create
     };
 
     return userFactory;

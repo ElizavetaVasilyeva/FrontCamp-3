@@ -1,1 +1,1 @@
-angular.module('blogsList', ['blogsDirectives']);
+angular.module('blogsList', ['blogsDirectives', 'dataService']);

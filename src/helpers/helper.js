@@ -15,7 +15,6 @@ class Helper {
   static prepareError(err, status, message) {
     err.status = status;
     err.message = `${message}\n${err.message}`;
-    return err;
   }
 
   /**

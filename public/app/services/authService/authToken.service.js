@@ -4,8 +4,8 @@
 
   function authToken($window) {
     var authTokenFactory = {
-      getToken: getToken,
-      setToken: setToken
+      getToken,
+      setToken
     };
 
     return authTokenFactory
