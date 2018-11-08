@@ -1,0 +1,18 @@
+<div>
+        <nav class="demo">
+                <a class="brand" href="/">
+                  <img src="app/views/AngularJS_logo.svg" className="App-logo" alt="logo" />&nbsp;
+                  <span>BLOG APP</span>
+                </a>
+                <input id="bmenub" type="checkbox" class="show" />
+                <label htmlFor="bmenub" class="burger pseudo button">menu</label>
+            
+                <div class="menu">
+                  <a ng-if="!vm.loggedIn" class="button icon-puzzle" href="/login">Login</a>
+                  <a ng-if="!vm.loggedIn" class="pseudo button icon-picture" href="/register">Register</a>
+                  <p ng-if="vm.loggedIn">Welcome, {{ vm.user.username}}!&nbsp;
+                    <a id="logout" href="#" ng-click="vm.doLogout()" class="button icon-puzzle">Logout</a>
+                  </p>
+                </div>
+              </nav>
+</div>

@@ -1,0 +1,27 @@
+<div>
+  <h2 class="text-center"> Edit Blog</h2>
+  <div class="flex two center">
+    <form name="editBlogForm" ng-submit="vm.editBlog(editBlogForm.$valid)">
+      <div class="form-group" ng-class="{ 'has-error' : editBlogForm.title.$invalid && !editBlogForm.title.$pristine }">
+        <label>Title:</label>
+        <input type="text" name="title" class="form-control" ng-model="vm.blog.title" ng-minlength="3" ng-maxlength="100" required/>
+        <p ng-show="editBlogForm.title.$invalid && !editBlogForm.title.$pristine" class="help-block">Title is required.</p>
+        <p ng-show="editBlogForm.title.$error.minlength" class="help-block">Title is too short.</p>
+        <p ng-show="editBlogForm.title.$error.maxlength" class="help-block">Title is too long.</p>
+      </div>
+      <div class="form-group">
+        <label>Author:</label>
+        <input type="text" name="author" class="form-control" ng-model="vm.blog.author" disabled="true" />
+      </div>
+      <div class="form-group" ng-class="{ 'has-error' : editBlogForm.body.$invalid && !editBlogForm.body.$pristine }">
+        <label>Body:</label>
+        <input type="text" name="body" class="form-control" ng-model="vm.blog.body" ng-minlength="20" required/>
+        <p ng-show="editBlogForm.body.$invalid && !editBlogForm.body.$pristine" class="help-block">Body is required.</p>
+        <p ng-show="editBlogForm.body.$error.minlength" class="help-block">Body is too short.</p>
+      </div>
+      <button type="submit" class="btn btn-default" ng-disabled="editBlogForm.$invalid">Submit</button>
+      <a href="/blogs/{{vm.id}}" class="button back">
+        <span aria-hidden="true"></span> Back </a>
+    </form>
+  </div>
+</div>

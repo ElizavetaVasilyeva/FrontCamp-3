@@ -1,0 +1,2 @@
+angular
+  .module('BlogsApp', ['ngRoute', 'authService', 'userService', 'dataService', 'blogsService', 'blogsDirectives', 'blogs', 'blog', 'blogsList', 'createBlog', 'login', 'register', 'header', 'editBlog']);

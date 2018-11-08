@@ -1,0 +1,24 @@
+<div>
+  <h2 class="text-center"> Add Blog</h2>
+  <div class="flex two center">
+    <form name='addBlogForm' ng-submit="vm.create(addBlogForm.$valid)">
+      <div class="form-group" ng-class="{ 'has-error' : addBlogForm.title.$invalid && !addBlogForm.title.$pristine }">
+        <label>Title:</label>
+        <input type="text" name="title" class="form-control" ng-model="vm.blogData.title" ng-minlength="3" ng-maxlength="100" required/>
+        <p ng-show="addBlogForm.title.$invalid && !addBlogForm.title.$pristine" class="help-block">Title is required.</p>
+        <p ng-show="addBlogForm.title.$error.minlength" class="help-block">Title is too short.</p>
+        <p ng-show="addBlogForm.title.$error.maxlength" class="help-block">Title is too long.</p>
+      </div>
+      <div class="form-group" ng-class="{ 'has-error' : addBlogForm.body.$invalid && !addBlogForm.body.$pristine }">
+        <label>Body:</label>
+        <input type="text" name="body" class="form-control" ng-model="vm.blogData.body" ng-minlength="20" required/>
+        <p ng-show="addBlogForm.body.$invalid && !addBlogForm.body.$pristine" class="help-block">Body is required.</p>
+        <p ng-show="addBlogForm.body.$error.minlength" class="help-block">Body is too short.</p>
+      </div>
+
+      <button type="submit" class="btn btn-default" ng-disabled="addBlogForm.$invalid">Submit</button>
+      <a href="/blogs" class="button back">
+        <span aria-hidden="true"></span> Back </a>
+    </form>
+  </div>
+</div>

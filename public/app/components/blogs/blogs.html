@@ -1,0 +1,27 @@
+<div>
+  <h2> All Blogs</h2>
+  <h4>
+    <a class="button valid" href="/createBlog">Add Blog</a>
+  </h4>
+  <br />
+  <div class="flex three">
+    <div>
+      <input type='text' ng-model='vm.query.date' class='form-control' placeholder='Filter by date' />
+    </div>
+    <div>
+      <input type='text' ng-model='vm.query.title' class='form-control' placeholder='Filter by title' />
+    </div>
+    <div>
+      <select class='form-control' ng-model='vm.order'>
+        <option value='-date'>Recent</option>
+        <option value='date'>Older</option>
+        <option value='title'>A-Z</option>
+        <option value='-title'>Z-A</option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div class="flex three">
+    <blogs-list class="blogs-list" blogs="vm.blogs" query="vm.query" order="vm.order"></blogs-list>
+  </div>
+</div>
